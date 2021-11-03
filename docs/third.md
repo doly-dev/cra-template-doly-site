@@ -18,29 +18,30 @@ nav:
 - [redux]
 - [hox]
 
-### 浏览器兼容
+### React Hooks
 
-- [react-app-polyfill]
-- [Supported Browsers and Features]
+- [rc-hooks]
+- [ahooks]
+
+### 业务工具方法
+
+- [util-helpers]
 
 ### 移动端调试控制台工具
 
 - [vConsole]
 - [eruda]
 
-### mock 数据
+### mock 生成数据
 
 - [mockjs]
 
 ### 动画效果
 
 - [react-transition-group]
-- [react-motion]
 - [react-spring]
 - [Animate.css]
 
-[supported browsers and features]: https://create-react-app.dev/docs/supported-browsers-features/#supported-language-features
-[react-app-polyfill]: https://github.com/facebook/create-react-app/tree/master/packages/react-app-polyfill
 [vconsole]: https://github.com/Tencent/vConsole
 [eruda]: https://github.com/liriliri/eruda
 [mockjs]: https://github.com/nuysoft/Mock/wiki
@@ -49,6 +50,8 @@ nav:
 [mobx-state-tree]: https://github.com/mobxjs/mobx-state-tree
 [redux]: https://github.com/reduxjs/redux
 [react-transition-group]: https://reactcommunity.org/react-transition-group/
-[react-motion]: https://github.com/chenglou/react-motion
 [react-spring]: https://github.com/react-spring/react-spring
 [animate.css]: https://animate.style/
+[rc-hooks]: https://doly-dev.github.io/rc-hooks/latest/index.html
+[ahooks]: ahooks.js.org
+[util-helpers]: https://doly-dev.github.io/util-helpers/index.html

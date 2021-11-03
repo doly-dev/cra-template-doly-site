@@ -11,7 +11,7 @@ features:
     desc: 基于 React 官方脚手架扩展
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png
     title: 高效开发
-    desc: 内置 Page、Router 等组件
+    desc: 内置组件、mock、proxy等
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
     title: TypeScript
     desc: 全量使用 TypeScript 开发

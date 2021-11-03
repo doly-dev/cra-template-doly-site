@@ -43,3 +43,11 @@ nav:
 最终采用 `React` 官方脚手架扩展，社区活跃，升级维护方便。
 
 > 该脚手架不支持 SSR 。如果需要实现 SSR ，推荐 [Next.js](https://www.nextjs.cn/) 。
+
+## 兼容性
+
+> [Supported Browsers and Features](https://create-react-app.dev/docs/supported-browsers-features/#supported-language-features)
+
+默认情况下，生成的项目支持所有现代浏览器。
+
+如果要支持 Internet Explorer 9、10 和 11 需要 polyfill，请使用 [react-app-polyfill](https://github.com/facebook/create-react-app/tree/master/packages/react-app-polyfill) 。

@@ -41,7 +41,7 @@ yarn add husky@4 --dev # 启用 git hook 生效，用于 commitlint
 │   ├── theme.js             # 主题配置，支持antd、antd-mobile@2
 │   ├── zip.js               # zip 包配置
 ├── dist                     # 构建结果
-├── zip                      # 打包构建结果的文件
+├── zip                      # 打包压缩构建结果
 ├── mock                     # mock 数据
 ├── public
 │   ├── favicon.ico          # favicon
