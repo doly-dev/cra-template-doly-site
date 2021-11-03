@@ -1,2 +1,23 @@
 # cra-template-doly-site
-cra-template-doly 文档站点
+
+The documentation source of [cra-template-doly](https://github.com/doly-dev/cra-template-doly).
+
+## Getting Started
+
+Install dependencies,
+
+```bash
+$ npm i
+```
+
+Start the dev server,
+
+```bash
+$ npm start
+```
+
+Build site app,
+
+```bash
+$ npm run build
+```
