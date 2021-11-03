@@ -9,8 +9,6 @@ on:
     paths:
       - .dumi/**
       - docs/**
-      - src/**
-      - .fatherrc.ts
       - .umirc.js
 
 jobs:
