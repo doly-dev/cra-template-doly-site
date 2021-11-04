@@ -35,7 +35,6 @@ nav:
 **Button.tsx**
 
 ```typescript
-import React, { Component } from 'react';
 import styles from './Button.module.less';
 
 const Button = () => {
@@ -58,7 +57,6 @@ const Button = () => {
 **Button.tsx**
 
 ```typescript
-import React, { Component } from 'react';
 import './Button.less';
 
 const Button = () => {
