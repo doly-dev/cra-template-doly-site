@@ -38,7 +38,7 @@ console.log(process.env.REACT_APP_ENV);
 baseURL: process.env.REACT_APP_API
 ```
 
-在开发环境中，使用的接口可能是本地 mock `""`，在生产构建用的是 `http://prod.api.example.com/`
+在开发环境中，使用的接口可能是本地 mock `""`，在生产构建用的是 `http://prod.api.example.com/` 。
 
 ## 开发环境打印信息
 

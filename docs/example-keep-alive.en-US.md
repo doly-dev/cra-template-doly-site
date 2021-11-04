@@ -1,30 +1,30 @@
 ---
-title: 集成 keep-alive
+title: Integrated keep-alive
 order: 33
 group:
-  title: 示例
+  title: Example
   order: 3
 nav:
-  title: 文档
+  title: Documents
   path: /docs
   order: 1
 ---
 
-# 集成 keep-alive
+# Integrated keep-alive
 
-> 参考 [react-activation]
+> Refer to [react-activation]
 
-[示例地址](https://github.com/doly-dev/cra-template-doly-examples/tree/main/examples/keep-alive)
+[Example address](https://github.com/doly-dev/cra-template-doly-examples/tree/main/examples/keep-alive)
 
-## 安装依赖
+## Installation dependencies
 
 ```bash
 yarn add react-activation
 ```
 
-## 使用步骤
+## Steps for usage
 
-1. `config/config.js` 配置 babel
+1. `config/config.js` configure babel
 
 ```javascript
 babel: {
@@ -35,7 +35,7 @@ babel: {
 }
 ```
 
-2. 修改 `components/Router/index.tsx`
+2. Revise `components/Router/index.tsx`
 
 ```typescript
 import KeepAlive, { AliveScope } from 'react-activation';
@@ -48,8 +48,8 @@ export type RouteItem = {
   keepAliveName?: string;
 }
 
-// AnimatedRoute 组件
-// props 增加 keepAlive = true, keepAliveName, keepAliveParamsKey
+// AnimatedRoute component
+// props add keepAlive = true, keepAliveName, keepAliveParamsKey
 // ...
 const routeView = (
   <div className="router">
@@ -69,7 +69,7 @@ const routeView = (
 )
 
 // WrapperRouter
-// Router 组件下添加 AliveScope
+// Add AliveScope under the Router component
 <Router history={routerHistory}>
   <AliveScope>
     // ...
@@ -77,14 +77,14 @@ const routeView = (
 </Router>
 ```
 
-## 常见问题
+## FAQ
 
 - [当前缓存页面 useActivate 会执行多次](https://github.com/CJY0208/react-activation/issues/111) - 由 React.StrictMode 影响。查阅 [严格模式](https://zh-hans.reactjs.org/docs/strict-mode.html)
 - [用 KeepAlive 包裹的组件中，react-router-dom 无法获取 params](https://github.com/CJY0208/react-activation/issues/43)
 
-## 注意事项
+## Precautions
 
-- 如果区分 `登录`/`未登录` 场景，需要在`退出登录`或`登录时`，清除缓存页面。
-- 如非必要，尽量不用。
+- If you distinguish `Logged in`/`not logged in` scene, you need to clear the cached page in `Log out` or `login`.
+- If not necessary, try not to use it.
 
 [react-activation]: https://www.npmjs.com/package/react-activation

@@ -2,22 +2,22 @@
 title: asyncComponent
 order: 23
 group:
-  title: 内置组件
+  title: Built-in components
   order: 2
 nav:
-  title: 文档
+  title: Documents
   path: /docs
   order: 1
 ---
 
-# asyncComponent - 异步组件加载
+# asyncComponent - Asynchronous component loading
 
-使用 [`@loadable/component`](https://www.npmjs.com/package/@loadable/component) 处理异步组件加载。
+Use [`@loadable/component`](https://www.npmjs.com/package/@loadable/component) handle asynchronous loading assembly.
 
-**特性**
+**characteristic**
 
-- 组件加载中，显示友好的加载页面
-- 组件加载失败 或 报错时，渲染降级后的 UI
+- When the component is loading, a friendly loading page is displayed
+- When the component fails to load or reports an error, render the degraded UI
 
 ## Example
 

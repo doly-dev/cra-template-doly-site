@@ -53,7 +53,7 @@ yarn remove antd-mobile
 - [antd-mobile 定制主题]
 - [antd 定制主题]
 
-### 如何在工具模块中使用 `history`
+### 如何在工具模块中使用 history ？
 
 `Router` 组件中有暴露 `routerHistory` ，可直接使用。
 
