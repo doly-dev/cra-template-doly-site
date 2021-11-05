@@ -9,7 +9,7 @@ on:
     paths:
       - .dumi/**
       - docs/**
-      - .umirc.js
+      - .umirc.ts
       - .github/workflows/ci.yml
 
 jobs:
