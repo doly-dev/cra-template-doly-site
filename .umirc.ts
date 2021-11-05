@@ -13,6 +13,16 @@ const publicPath = serverRootDirect + version + '/';
 let prodConfig: any = {};
 
 if (NODE_ENV === 'production') {
+  prodConfig.headScripts = [
+    { src: 'https://www.googletagmanager.com/gtag/js?id=G-CTKFHCWM1R', async: true },
+    {
+      content: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CTKFHCWM1R');
+    `
+    }
+  ];
   prodConfig.chunks = ['vendors', 'umi'];
   prodConfig.chainWebpack = function (config, { webpack }) {
     config.merge({
