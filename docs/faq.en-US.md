@@ -61,24 +61,5 @@ refer to:
 import { routerHistory } from '@/components/Router';
 ```
 
-### Multiple modules refer to the same style file, how to extract their common styles?
-
-> Since it is rare in development that the same style file is referenced in multiple modules, this configuration is not integrated into the scaffolding by default.
-
-`config/config.js` The `cacheGroups` next Add Configuration:
-
-```javascript
-cacheGroups: {
-  // ...
-  commonStyle: {
-    name: 'common',      // common style name
-    test: /\.(c|le)ss$/, // selection rules
-    minSize: 100,        // minimum size, unit byte
-    chunks: 'all'        // Which chunks participate in the split. all stands for all modules, async stands for asynchronously loaded modules, initial stands for modules that can be obtained during initialization
-  },
-  // ...
-}
-```
-
 [antd custom theme]: https://ant-design.gitee.io/docs/react/customize-theme-cn
 [antd-mobile custom theme]: https://antd-mobile-doc-v2.gitee.io/docs/react/customize-theme-cn

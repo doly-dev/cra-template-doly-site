@@ -61,24 +61,5 @@ yarn remove antd-mobile
 import { routerHistory } from '@/components/Router';
 ```
 
-### 多个模块引用同一个样式文件，如何提取它们的公共样式？
-
-> 由于开发中极少情况会在多个模块中引用同一个样式文件的情况，所以该配置默认不集成到脚手架中。
-
-`config/config.js` 的 `cacheGroups` 下添加配置：
-
-```javascript
-cacheGroups: {
-  // ...
-  commonStyle: {
-    name: 'common',      // 公共样式名称
-    test: /\.(c|le)ss$/, // 选择规则
-    minSize: 100,        // 最小大小，单位字节
-    chunks: 'all'        // 哪些chunk参与拆分。all代表所有模块，async代表异步加载的模块, initial代表初始化时就能获取的模块
-  },
-  // ...
-}
-```
-
 [antd 定制主题]: https://ant-design.gitee.io/docs/react/customize-theme-cn
 [antd-mobile 定制主题]: https://antd-mobile-doc-v2.gitee.io/docs/react/customize-theme-cn
