@@ -32,7 +32,7 @@ cd my-app
 yarn add husky@4 --dev # 启用 git hook 生效，用于 commitlint
 
 git add .
-git commit -m "add husky"
+git commit -m "chore: add husky"
 
 yarn start # 启动本地开发服务
 ```
@@ -51,7 +51,7 @@ cd my-app
 npm install husky@4 --save-dev # 启用 git hook 生效，用于 commitlint
 
 git add .
-git commit -m "add husky"
+git commit -m "chore: add husky"
 
 npm start # 启动本地开发服务
 ```

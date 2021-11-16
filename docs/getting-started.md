@@ -26,7 +26,7 @@ cd my-app
 yarn add husky@4 --dev # 启用 git hook 生效，用于 commitlint
 
 git add .
-git commit -m "add husky"
+git commit -m "chore: add husky"
 ```
 
 > `commitlint` 配置都已内置，只需安装 **`husky@4`** 即可。

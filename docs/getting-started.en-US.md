@@ -26,7 +26,7 @@ cd my-app
 yarn add husky@4 --dev # Enable git hook to take effect, for commitlint
 
 git add .
-git commit -m "add husky"
+git commit -m "chore: add husky"
 ```
 
 > `commitlint` Configurations have been built, simply install **`husky@4`** can be.
