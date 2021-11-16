@@ -7,7 +7,7 @@
     "start": "dumi dev",
     "build": "dumi build",
     "build:version": "cross-env BUIDL_DOC_VERSION=true dumi build",
-    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "prettier": "prettier --write docs/**/*",
     "commit": "cz"
   },
   "main": "dist/index.js",

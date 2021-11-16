@@ -4,3 +4,8 @@
 package.json
 .umi
 .umi-production
+dist
+docs/images
+yarn.lock
+package-lock.json
+.editorconfig
