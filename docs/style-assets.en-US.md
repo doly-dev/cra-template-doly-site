@@ -44,7 +44,7 @@ const Button = () => {
 
 ### Don't use CSS Modules
 
-> Not recommended if there is a need to use global style, in `src/index.less` or `src/App.less` in writing. Local can use `:global` `:local` in `*.module.less`.
+> Not recommended if there is a need to use global style, in `src/index.less` in writing. Local can use `:global` `:local` in `*.module.less`.
 
 **Button.less**
 

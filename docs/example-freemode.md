@@ -183,7 +183,7 @@ import { getScrollTop, getScrollHeight, getClientHeight } from '@/utils/dom'; //
 }
 ```
 
-3. `src/App.tsx`
+3. `src/routes.ts`
 
 比如首页启用 `freemode`
 

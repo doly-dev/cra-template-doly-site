@@ -12,7 +12,7 @@ nav:
 
 # Router
 
-Routing `src/App.tsx` configuration.
+Routing `src/routes.ts` configuration.
 
 **characteristic**
 
@@ -41,10 +41,10 @@ type RouteItem = {
 
 ### Use history in non-component modules
 
-`Router` The module is exposed `routerHistory` and can be used directly:
+can be used `src/utils/history.ts`:
 
 ```typescript
-import { routerHistory } from '@/components/Router';
+import routerHistory from '@/utils/history';
 
 // util function
 function xxx() {

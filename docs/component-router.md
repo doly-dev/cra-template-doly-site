@@ -12,12 +12,12 @@ nav:
 
 # Router - 路由
 
-路由在 `src/App.tsx` 中配置。
+路由在 `src/routes.ts` 中配置。
 
 **特性**
 
 - 页面切换动画，需使用 [`PageContainer`](/docs/component-page) 包裹页面
-- 支持集成 `keep-alive` ，包含页面激活和未激活钩子方法，[参考 keep-alive 示例](/docs/example-keep-alive)
+- 支持集成 `keep-alive` ，包含页面激活和未激活钩子方法，[参考 keep-alive 示例](/docs/example)
 - 方便以后升级 `react-router-dom@6` `history@5`
 
 ## API
@@ -41,10 +41,10 @@ type RouteItem = {
 
 ### 非组件模块中使用 history
 
-`Router` 模块有暴露 `routerHistory` ，可直接使用：
+直接使用 `src/utils/history.ts`：
 
 ```typescript
-import { routerHistory } from '@/components/Router';
+import routerHistory from '@/utils/history';
 
 // util function
 function xxx() {

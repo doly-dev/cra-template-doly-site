@@ -58,10 +58,9 @@ git commit -m "chore: add husky"
 │   ├── pages                # page
 │   ├── services             # Background interface services
 │   ├── utils                # tools
-│   ├── App.tsx              # Application routing, layout, global context
-│   ├── App.less             # Application style
-│   ├── Index.tsx            # Project entry file
-│   ├── Index.less           # Global style
+│   ├── index.tsx            # Project entry file
+│   ├── index.less           # Global style
+│   ├── routes.ts            # routing configuration
 ├── package.json
 ├── README.md
 ```

@@ -58,10 +58,9 @@ git commit -m "chore: add husky"
 │   ├── pages                # 页面
 │   ├── services             # 后台接口服务
 │   ├── utils                # 工具
-│   ├── App.tsx              # 应用路由、布局、全局上下文
-│   ├── App.less             # 应用样式
-│   ├── Index.tsx            # 项目入口文件
-│   ├── Index.less           # 全局样式
+│   ├── index.tsx            # 项目入口文件
+│   ├── index.less           # 全局样式
+│   ├── routes.ts            # 路由配置
 ├── package.json
 ├── README.md
 ```

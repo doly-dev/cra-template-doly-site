@@ -183,7 +183,7 @@ Revise `index.module.less`
 }
 ```
 
-3. `src/App.tsx`
+3. `src/routes.ts`
 
 For example, home page activation `freemode`
 

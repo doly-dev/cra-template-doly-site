@@ -44,7 +44,7 @@ const Button = () => {
 
 ### 不使用 CSS Modules
 
-> 不推荐，如果有需要使用全局样式，请在 `src/index.less` 或 `src/App.less` 中编写。局部可在 `*.module.less` 中使用 `:global` `:local` 。
+> 不推荐，如果有需要使用全局样式，请在 `src/index.less` 中编写。局部可在 `*.module.less` 中使用 `:global` `:local` 。
 
 **Button.less**
 
