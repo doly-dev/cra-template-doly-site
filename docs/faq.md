@@ -55,10 +55,26 @@ yarn remove antd-mobile
 
 ### 如何在工具模块中使用 history ？
 
-`Router` 组件中有暴露 `routerHistory` ，可直接使用。
+直接使用 `src/utils/history.ts`：
 
 ```typescript
-import { routerHistory } from '@/components/Router';
+import routerHistory from '@/utils/history';
+
+// util function
+function xxx() {
+  routerHistory.push('/');
+}
+```
+
+### 如何关闭路由切换动画？
+
+`src/index.tsx` 中的 `Router` 组件设置 `animated={false}`
+
+```typescript
+<Router
+  // ...
+  animated={false}
+/>
 ```
 
 [antd 定制主题]: https://ant-design.gitee.io/docs/react/customize-theme-cn

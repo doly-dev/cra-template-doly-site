@@ -55,10 +55,26 @@ refer to:
 
 ### How to use history in the tool module?
 
-`Router` The components are exposed `routerHistory` and can be used directly.
+Direct use `src/utils/history.ts` :
 
 ```typescript
-import { routerHistory } from '@/components/Router';
+import routerHistory from '@/utils/history';
+
+// util function
+function xxx() {
+  routerHistory.push('/');
+}
+```
+
+### How to turn off the route switching animation?
+
+`src/index.tsx` The `Router` component settings `animated={false}`
+
+```typescript
+<Router
+  // ...
+  animated={false}
+/>
 ```
 
 [antd custom theme]: https://ant-design.gitee.io/docs/react/customize-theme-cn
