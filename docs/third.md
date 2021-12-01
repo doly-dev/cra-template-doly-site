@@ -35,6 +35,7 @@ nav:
 ### mock 生成数据
 
 - [mockjs]
+- [faker]
 
 ### 动画效果
 
@@ -45,6 +46,7 @@ nav:
 [vconsole]: https://github.com/Tencent/vConsole
 [eruda]: https://github.com/liriliri/eruda
 [mockjs]: https://github.com/nuysoft/Mock/wiki
+[faker]: https://www.npmjs.com/package/faker
 [hox]: https://github.com/umijs/hox
 [mobx]: https://github.com/mobxjs/mobx
 [mobx-state-tree]: https://github.com/mobxjs/mobx-state-tree
@@ -53,5 +55,5 @@ nav:
 [react-spring]: https://github.com/react-spring/react-spring
 [animate.css]: https://animate.style/
 [rc-hooks]: https://doly-dev.github.io/rc-hooks/latest/index.html
-[ahooks]: ahooks.js.org
+[ahooks]: https://ahooks.js.org/
 [util-helpers]: https://doly-dev.github.io/util-helpers/index.html
