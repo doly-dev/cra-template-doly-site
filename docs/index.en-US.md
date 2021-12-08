@@ -29,10 +29,10 @@ yarn create react-app my-app --template doly # Create an application
 
 cd my-app
 
-yarn add husky@4 --dev # Enable git hook to take effect, for commitlint
+yarn add yorkie --dev # Enable git hook to take effect, for commitlint
 
 git add .
-git commit -m "chore: add husky"
+git commit -m "chore: add yorkie"
 
 yarn start # Start local development service
 ```
@@ -48,10 +48,10 @@ npx create-react-app my-app --template doly # Create an application
 
 cd my-app
 
-npm install husky@4 --save-dev # Enable git hook to take effect, for commitlint
+npm install yorkie --save-dev # Enable git hook to take effect, for commitlint
 
 git add .
-git commit -m "chore: add husky"
+git commit -m "chore: add yorkie"
 
 npm start # Start local development service
 ```

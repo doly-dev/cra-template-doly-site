@@ -44,7 +44,7 @@ yarn build
 yarn analyze
 ```
 
-![analyze](./images/analyze.jpg)
+![analyze](./images/analyze.png)
 
 ## Deploy
 

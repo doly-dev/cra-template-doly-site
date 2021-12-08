@@ -23,7 +23,7 @@ nav:
 
 ```typescript
 import ReactDom from 'react-dom';
-import asyncComponent from '@/components/AsyncComponent';
+import asyncComponent from '@/components/asyncComponent';
 
 const HomePage = asyncComponent(() => import('./pages/home'));
 

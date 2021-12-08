@@ -23,13 +23,13 @@ yarn create react-app my-app --template doly # 创建一个应用
 
 cd my-app
 
-yarn add husky@4 --dev # 启用 git hook 生效，用于 commitlint
+yarn add yorkie --dev # 启用 git hook 生效，用于 commitlint
 
 git add .
-git commit -m "chore: add husky"
+git commit -m "chore: add yorkie"
 ```
 
-> `commitlint` 配置都已内置，只需安装 **`husky@4`** 即可。
+> `commitlint` 配置都已内置，只需安装 **`yorkie`** 即可。
 >
 > 后面代码提交 `git commit -m xxx` 替换为 `yarn commit` 使用交互式生成规范格式的提交信息。
 
@@ -41,7 +41,6 @@ git commit -m "chore: add husky"
 │   ├── env.js               # 环境变量配置
 │   ├── config.js            # craco 配置文件
 │   ├── proxy.js             # 代理配置，对应环境变量 REACT_APP_ENV
-│   ├── theme.js             # 主题配置，支持antd、antd-mobile@2
 │   ├── zip.js               # zip 包配置
 ├── dist                     # 构建结果
 ├── zip                      # 打包压缩构建结果

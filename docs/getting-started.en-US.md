@@ -23,13 +23,13 @@ yarn create react-app my-app --template doly # Create an application
 
 cd my-app
 
-yarn add husky@4 --dev # Enable git hook to take effect, for commitlint
+yarn add yorkie --dev # Enable git hook to take effect, for commitlint
 
 git add .
-git commit -m "chore: add husky"
+git commit -m "chore: add yorkie"
 ```
 
-> `commitlint` Configurations have been built, simply install **`husky@4`** can be.
+> `commitlint` Configurations have been built, simply install **`yorkie`** can be.
 >
 > Submitted after the code `git commit -m xxx` replacement for the `yarn commit` submission of information using interactive generate canonical format.
 
@@ -41,7 +41,6 @@ git commit -m "chore: add husky"
 │   ├── env.js               # Environment variable configuration
 │   ├── config.js            # craco configuration file
 │   ├── proxy.js             # Proxy configuration, corresponding to the environment variable REACT_APP_ENV
-│   ├── theme.js             # Theme configuration, support antd, antd-mobile@2
 │   ├── zip.js               # zip package configuration
 ├── dist                     # Build result
 ├── zip                      # Pack and compress the build result
