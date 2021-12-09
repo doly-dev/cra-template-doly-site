@@ -17,7 +17,7 @@ nav:
 **特性**
 
 - 页面切换动画，需使用 [`PageContainer`](/docs/component-page) 包裹页面
-- 支持集成 `keep-alive` ，包含页面激活和未激活钩子方法，[参考 keep-alive 示例](/docs/example)
+- 支持集成 `keep-alive` ，包含页面激活和未激活钩子方法，[参考 keep-alive 示例](/docs/example-keep-alive)
 - 方便以后升级 `react-router-dom@6` `history@5`
 
 ## API
