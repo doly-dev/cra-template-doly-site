@@ -29,11 +29,6 @@ yarn create react-app my-app --template doly # 创建一个应用
 
 cd my-app
 
-yarn add yorkie --dev # 启用 git hook 生效，用于 commitlint
-
-git add .
-git commit -m "chore: add yorkie"
-
 yarn start # 启动本地开发服务
 ```
 
@@ -47,11 +42,6 @@ _或者你使用的是 `npm`_
 npx create-react-app my-app --template doly # 创建一个应用
 
 cd my-app
-
-npm install yorkie --save-dev # 启用 git hook 生效，用于 commitlint
-
-git add .
-git commit -m "chore: add yorkie"
 
 npm start # 启动本地开发服务
 ```

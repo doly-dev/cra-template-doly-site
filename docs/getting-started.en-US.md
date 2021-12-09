@@ -19,19 +19,14 @@ nav:
 ## Initialize the project
 
 ```bash
-yarn create react-app my-app --template doly # Create an application
-
-cd my-app
-
-yarn add yorkie --dev # Enable git hook to take effect, for commitlint
-
-git add .
-git commit -m "chore: add yorkie"
+yarn create react-app my-app --template doly
 ```
 
-> `commitlint` Configurations have been built, simply install **`yorkie`** can be.
->
-> Submitted after the code `git commit -m xxx` replacement for the `yarn commit` submission of information using interactive generate canonical format.
+Or
+
+```bash
+npx create-react-app my-app --template doly
+```
 
 ## Directory Structure
 

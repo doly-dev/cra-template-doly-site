@@ -29,11 +29,6 @@ yarn create react-app my-app --template doly # Create an application
 
 cd my-app
 
-yarn add yorkie --dev # Enable git hook to take effect, for commitlint
-
-git add .
-git commit -m "chore: add yorkie"
-
 yarn start # Start local development service
 ```
 
@@ -47,11 +42,6 @@ _Or you are using `npm` :_
 npx create-react-app my-app --template doly # Create an application
 
 cd my-app
-
-npm install yorkie --save-dev # Enable git hook to take effect, for commitlint
-
-git add .
-git commit -m "chore: add yorkie"
 
 npm start # Start local development service
 ```

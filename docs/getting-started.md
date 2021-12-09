@@ -19,19 +19,14 @@ nav:
 ## 初始化项目
 
 ```bash
-yarn create react-app my-app --template doly # 创建一个应用
-
-cd my-app
-
-yarn add yorkie --dev # 启用 git hook 生效，用于 commitlint
-
-git add .
-git commit -m "chore: add yorkie"
+yarn create react-app my-app --template doly
 ```
 
-> `commitlint` 配置都已内置，只需安装 **`yorkie`** 即可。
->
-> 后面代码提交 `git commit -m xxx` 替换为 `yarn commit` 使用交互式生成规范格式的提交信息。
+或
+
+```bash
+npx create-react-app my-app --template doly
+```
 
 ## 目录结构
 
