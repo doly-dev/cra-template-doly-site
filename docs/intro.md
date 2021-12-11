@@ -54,7 +54,7 @@ nav:
 
 ## Git hooks
 
-Git 钩子管理由 [yorkie](https://www.npmjs.com/package/yorkie) 和 [lint-staged](https://www.npmjs.com/package/lint-staged) 提供。
+Git hooks 管理由 [yorkie](https://www.npmjs.com/package/yorkie) 和 [lint-staged](https://www.npmjs.com/package/lint-staged) 提供。
 
 ### 规范代码格式
 
