@@ -1,6 +1,6 @@
 ---
 title: Build and deploy
-order: 6
+order: 7
 group:
   title: Documents
   order: 1

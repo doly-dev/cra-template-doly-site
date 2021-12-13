@@ -1,6 +1,6 @@
 ---
 title: Styles and resources
-order: 3
+order: 4
 group:
   title: Documents
   order: 1

@@ -1,6 +1,6 @@
 ---
 title: 样式和资源
-order: 3
+order: 4
 group:
   title: 文档
   order: 1

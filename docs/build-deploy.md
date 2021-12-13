@@ -1,6 +1,6 @@
 ---
 title: 构建和部署
-order: 6
+order: 7
 group:
   title: 文档
   order: 1
