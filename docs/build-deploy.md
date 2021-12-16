@@ -24,21 +24,7 @@ yarn build
 
 ## 分析构建包
 
-1. 在 `config/env.js` 将生产环境配置的 `GENERATE_SOURCEMAP` 注释
-
-```javascript
-// GENERATE_SOURCEMAP: "false",
-```
-
-<mark>分析完成后，记得去掉该注释</mark>
-
-2. 重新构建
-
-```bash
-yarn build
-```
-
-3. 运行分析脚本
+运行分析脚本，单独构建到 `dist-analyze`，并自动打开浏览器访问。
 
 ```bash
 yarn analyze

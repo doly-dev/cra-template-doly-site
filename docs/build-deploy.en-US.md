@@ -24,21 +24,7 @@ Resources in the package `dist` directory.
 
 ## Analysis build package
 
-1. In `config/env.js` the configuration of the production environment `GENERATE_SOURCEMAP` Notes
-
-```javascript
-// GENERATE_SOURCEMAP: "false",
-```
-
-<mark>After the analysis is complete, remember to remove the comment</mark>
-
-2. Rebuild
-
-```bash
-yarn build
-```
-
-3. Run analysis script
+Run the analysis script, build it separately `dist-analyze`, and automatically open the browser to access.
 
 ```bash
 yarn analyze
