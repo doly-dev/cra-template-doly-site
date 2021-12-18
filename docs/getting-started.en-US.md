@@ -33,8 +33,8 @@ npx create-react-app my-app --template doly
 ```
 .
 ├── config
-│   ├── env.js               # Environment variable configuration
 │   ├── config.js            # craco configuration file
+│   ├── env.js               # Environment variable configuration
 │   ├── proxy.js             # Proxy configuration, corresponding to the environment variable REACT_APP_ENV
 │   ├── zip.js               # zip package configuration
 ├── dist                     # Build result
