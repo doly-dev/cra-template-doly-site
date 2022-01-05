@@ -35,7 +35,8 @@ type RouteItem = {
 | parameter | illustrate | type | defaults |
 | --- | --- | --- | --- |
 | routes | Routing configuration | `RouteItem[]` | - |
-| animated | Whether to open the page switching animation | `boolean` | `true` |
+| animated | Whether to open the page switching animation or not to turn |
+| off the switching animation, the positioning layout will not be used | `boolean` | `true` |
 | noMatchPath | Redirect to this page when the route is not matched, generally point to 404 page | `string` | - |
 | onRouteChange | Triggered when routing initialization and routing changes | `(route?:RouteItem)=>void` | - |
 

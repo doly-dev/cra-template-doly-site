@@ -52,7 +52,7 @@ export type RouteItem = {
 // props 增加 keepAlive = true, keepAliveName, keepAliveParamsKey
 // ...
 const routeView = (
-  <div className="router">
+  <div className={classnames('route', { 'route-animated': animated })}>
     {
       keepAlive ? (
         <KeepAlive
@@ -67,6 +67,8 @@ const routeView = (
     }
   </div>
 )
+
+// ...
 
 // WrapperRouter
 // Router 组件下添加 AliveScope

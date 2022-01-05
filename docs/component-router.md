@@ -35,7 +35,7 @@ type RouteItem = {
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | routes | 路由配置 | `RouteItem[]` | - |
-| animated | 是否开启页面切换动画 | `boolean` | `true` |
+| animated | 是否开启页面切换动画<br/>关闭切换动画后将不使用定位布局 | `boolean` | `true` |
 | noMatchPath | 没有匹配到路由时重定向到该页面，一般指向 404 页 | `string` | - |
 | onRouteChange | 路由初始化、路由变化时触发 | `(route?:RouteItem)=>void` | - |
 
