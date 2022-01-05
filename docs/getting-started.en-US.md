@@ -14,7 +14,7 @@ nav:
 
 ## Environmental preparation
 
-- [nodejs](http://nodejs.org/) ≧ 10
+- [nodejs](http://nodejs.org/) ≧ 14
 
 ## Initialize the project
 

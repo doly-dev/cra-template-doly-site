@@ -14,7 +14,7 @@ nav:
 
 ## 环境准备
 
-- [nodejs](http://nodejs.org/) ≧ 10
+- [nodejs](http://nodejs.org/) ≧ 14
 
 ## 初始化项目
 
