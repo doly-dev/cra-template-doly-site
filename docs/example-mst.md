@@ -26,7 +26,7 @@ yarn add mobx mobx-react-lite mobx-state-tree
 
 ## 使用步骤
 
-1. 将 [https://github.com/ecklf/react-hooks-mobx-state-tree/tree/main/src/models](https://github.com/ecklf/react-hooks-mobx-state-tree/tree/main/src/models) 复制到 `src/models`下，部分类型错误需要调整，直接使用快速修复（[VSCode ESLint 插件](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)）。
+1. 将 <https://github.com/ecklf/react-hooks-mobx-state-tree/tree/main/src/models> 复制到 `src/models`下，部分类型错误需要调整，直接使用快速修复（[VSCode ESLint 插件](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)）。
 
 **注意以下缓存部分，如果没有用到，请酌情删除！**
 

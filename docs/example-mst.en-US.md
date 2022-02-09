@@ -26,7 +26,7 @@ yarn add mobx mobx-react-lite mobx-state-tree
 
 ## Steps for usage
 
-1. The [https://github.com/ecklf/react-hooks-mobx-state-tree/tree/main/src/models](https://github.com/ecklf/react-hooks-mobx-state-tree/tree/main/src/models) copied to the `src/models` next, some types of errors need to be adjusted directly using the quick fix ([VSCode ESLint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)).
+1. The <https://github.com/ecklf/react-hooks-mobx-state-tree/tree/main/src/models> copied to the `src/models` next, some types of errors need to be adjusted directly using the quick fix ([VSCode ESLint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)).
 
 **Pay attention to the following cache part, if not used, please delete it as appropriate!**
 
