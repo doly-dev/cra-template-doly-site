@@ -12,18 +12,22 @@ nav:
 
 # Third-party library recommendation
 
-## UI
+### Component library
 
+- [antd-mobile] + [mobile-more]
+- [antd] + [antd-more]
 - [wonder-ui]
 - [mui]
-- [antd-mobile]
-- [antd]
 - [semi]
 - [arco]
 
+### Icon
+
+- [doly-icons]
+
 ### State management
 
-- [mobx-state-tree] + [mobx]
+- [mobx] + [mobx-state-tree]
 - [redux]
 - [hox]
 
@@ -55,7 +59,7 @@ nav:
 [vconsole]: https://github.com/Tencent/vConsole
 [eruda]: https://github.com/liriliri/eruda
 [mockjs]: https://github.com/nuysoft/Mock/wiki
-[faker]: https://www.npmjs.com/package/faker
+[faker]: https://github.com/faker-js/faker
 [hox]: https://github.com/umijs/hox
 [mobx]: https://github.com/mobxjs/mobx
 [mobx-state-tree]: https://github.com/mobxjs/mobx-state-tree
@@ -69,6 +73,9 @@ nav:
 [wonder-ui]: https://github.com/jian263994241/wonder-ui/tree/next
 [mui]: https://mui.com/
 [antd-mobile]: https://mobile.ant.design/
-[antd]: https://ant-design.gitee.io/
+[mobile-more]: https://doly-dev.github.io/mobile-more/latest/index.html
+[antd]: https://ant.design/
+[antd-more]: https://doly-dev.github.io/antd-more/latest/index.html
 [semi]: https://semi.design/
 [arco]: https://arco.design/
+[doly-icons]: https://doly-dev.github.io/doly-icons/latest/index.html
