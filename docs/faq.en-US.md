@@ -35,3 +35,23 @@ function xxx() {
   animated={false}
 />
 ```
+
+### Load on demand `antd`?
+
+Install dependencies `babel-plugin-import`
+
+```bash
+yarn add babel-plugin-import --dev
+```
+
+Modify file `config/config.js` configuration
+
+```
+// ...
+babel: {
+  plugins: [
+    ...whenProd(() => [['transform-remove-console', { exclude: ['error', 'warn'] }]], []),
+    ['import', { libraryName: 'antd', libraryDirectory: 'lib', style: true }, 'antd']
+  ]
+}
+```

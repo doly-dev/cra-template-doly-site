@@ -35,3 +35,23 @@ function xxx() {
   animated={false}
 />
 ```
+
+### 按需加载 `antd` ？
+
+安装依赖 `babel-plugin-import`
+
+```bash
+yarn add babel-plugin-import --dev
+```
+
+修改文件 `config/config.js` 配置
+
+```
+// ...
+babel: {
+  plugins: [
+    ...whenProd(() => [['transform-remove-console', { exclude: ['error', 'warn'] }]], []),
+    ['import', { libraryName: 'antd', libraryDirectory: 'lib', style: true }, 'antd']
+  ]
+}
+```
