@@ -20,6 +20,7 @@ nav:
 - [mui]
 - [semi]
 - [arco]
+- [nextui]
 
 ### Icon
 
@@ -72,6 +73,7 @@ nav:
 [util-helpers]: https://doly-dev.github.io/util-helpers/index.html
 [wonder-ui]: https://github.com/jian263994241/wonder-ui/tree/next
 [mui]: https://mui.com/
+[nextui]: https://nextui.org/
 [antd-mobile]: https://mobile.ant.design/
 [mobile-more]: https://doly-dev.github.io/mobile-more/latest/index.html
 [antd]: https://ant.design/
