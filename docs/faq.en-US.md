@@ -25,6 +25,22 @@ function xxx() {
 }
 ```
 
+### Type error after reinstalling dependencies?
+
+The high probability is due to the `@types/react` default .
+
+solution:
+
+- Delete `lock` files and `node_modules` directories.
+- **package.json** specifies the `@types/react` version , and then reinstall the dependencies.
+
+```typescript
+"resolutions": {
+  // ...
+  "@types/react": "17"
+}
+```
+
 ### How to turn off the route switching animation?
 
 `src/index.tsx` The `Router` component settings `animated={false}`
