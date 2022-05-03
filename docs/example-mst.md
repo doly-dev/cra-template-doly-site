@@ -35,11 +35,13 @@ yarn add mobx mobx-react-lite mobx-state-tree
 
 // 实例 model 时，如果有缓存数据就使用
 // 需要注意退出登录清除、进入页面更新数据
-const data = localStorage.getItem('rootState');
-if (data) {
-  const json = JSON.parse(data);
-  if (RootModel.is(json)) {
-    initialState = RootModel.create(json);
+if (process.browser) {
+  const data = localStorage.getItem('rootState');
+  if (data) {
+    const json = JSON.parse(data);
+    if (RootModel.is(json)) {
+      initialState = RootModel.create(json);
+    }
   }
 }
 
@@ -63,6 +65,24 @@ import { Provider, rootStore } from '@/models/Root';
 function App() {
   return <Provider value={rootStore}>{/*...*/}</Provider>;
 }
+```
+
+3. 组件中使用
+
+```typescript
+import { observer } from "mobx-react-lite";
+import { useMst } from '@/models/Root';
+
+const SomeComponent = observer(()=>{
+  const { cart } = useMst();
+  console.log(cart);
+
+  return (
+    // ...
+  )
+});
+
+export default SomeComponent;
 ```
 
 ## 枚举类型管理
