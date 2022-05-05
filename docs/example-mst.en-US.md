@@ -63,7 +63,15 @@ import { Provider, rootStore } from '@/models/Root';
 // ...
 
 function App() {
-  return <Provider value={rootStore}>{/*...*/}</Provider>;
+  return (
+    // <React.StrictMode>
+    <Provider value={rootStore}>
+      <HistoryRouter history={myHistory}>
+        <AnimatedRoutes routes={routes} />
+      </HistoryRouter>
+    </Provider>
+    // </React.StrictMode>
+  );
 }
 ```
 

@@ -18,10 +18,10 @@ The abnormal page is used to give feedback on the specific abnormal state of the
 
 ## API
 
-| parameter | illustrate                | type        | Defaults |
-| --------- | ------------------------- | ----------- | -------- |
-| icon      | picture                   | ReactNode   | -        |
-| title     | title                     | ReactNode   | -        |
-| desc      | supplementary description | ReactNode   | -        |
-| extra     | extra information         | ReactNode   | -        |
-| actions   | operate                   | ReactNode[] | -        |
+| parameter | illustrate                | type          | Defaults |
+| --------- | ------------------------- | ------------- | -------- |
+| icon      | picture                   | `ReactNode`   | -        |
+| title     | title                     | `ReactNode`   | -        |
+| desc      | supplementary description | `ReactNode`   | -        |
+| extra     | extra information         | `ReactNode`   | -        |
+| actions   | operate                   | `ReactNode[]` | -        |

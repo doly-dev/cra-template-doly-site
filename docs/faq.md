@@ -17,36 +17,20 @@ nav:
 直接使用 `src/utils/history.ts`：
 
 ```typescript
-import routerHistory from '@/utils/history';
+import myHistory from '@/utils/history';
 
 // util function
 function xxx() {
-  routerHistory.push('/');
-}
-```
-
-### 重新安装依赖后类型报错？
-
-大概率是因为部分依赖的 `@types/react` 默认安装 18 版本导致。
-
-解决方案：
-
-- 删除 `lock` 文件和 `node_modules` 目录。
-- **package.json** 指定 `@types/react` 版本，再重新安装依赖即可。
-
-```typescript
-"resolutions": {
-  // ...
-  "@types/react": "17"
+  myHistory.push('/');
 }
 ```
 
 ### 如何关闭路由切换动画？
 
-`src/index.tsx` 中的 `Router` 组件设置 `animated={false}`
+`src/index.tsx` 中的 `AnimatedRoutes` 组件设置 `animated={false}`
 
 ```typescript
-<Router
+<AnimatedRoutes
   // ...
   animated={false}
 />

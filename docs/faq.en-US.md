@@ -17,36 +17,20 @@ nav:
 Direct use `src/utils/history.ts` :
 
 ```typescript
-import routerHistory from '@/utils/history';
+import myHistory from '@/utils/history';
 
 // util function
 function xxx() {
-  routerHistory.push('/');
-}
-```
-
-### Type error after reinstalling dependencies?
-
-The high probability is due to the `@types/react` default .
-
-solution:
-
-- Delete `lock` files and `node_modules` directories.
-- **package.json** specifies the `@types/react` version , and then reinstall the dependencies.
-
-```typescript
-"resolutions": {
-  // ...
-  "@types/react": "17"
+  myHistory.push('/');
 }
 ```
 
 ### How to turn off the route switching animation?
 
-`src/index.tsx` The `Router` component settings `animated={false}`
+`src/index.tsx` The `AnimatedRoutes` component settings `animated={false}`
 
 ```typescript
-<Router
+<AnimatedRoutes
   // ...
   animated={false}
 />

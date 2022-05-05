@@ -12,8 +12,12 @@ nav:
 
 # PageContainer
 
-The page is wrapped in this container as much as possible. If the page switching animation is not turned off, the default style sets absolute positioning and background color.
+The page should be wrapped with this container for setting the html title and page styles. You can also modify the component directly.
 
 ## API
 
-With `div` the same.
+The rest are the `div` same .
+
+| parameter | illustrate | type     | Defaults |
+| --------- | ---------- | -------- | -------- |
+| title     | html title | `string` | -        |

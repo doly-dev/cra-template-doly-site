@@ -12,28 +12,18 @@ nav:
 
 # asyncComponent - Asynchronous component loading
 
-Use [`@loadable/component`](https://www.npmjs.com/package/@loadable/component) handle asynchronous loading assembly.
-
-**characteristic**
-
-- When the component is loading, a friendly loading page is displayed
-- When the component fails to load or reports an error, render the degraded UI
-
-## Example
+`Suspense` `lazy` Handle asynchronous component loading with React .
 
 ```typescript
-import ReactDom from 'react-dom';
 import asyncComponent from '@/components/asyncComponent';
 
-const HomePage = asyncComponent(() => import('./pages/home'));
+const HomePage = asyncComponent ( ( ) => import ( './pages/home' ) ) ;
 
-function App() {
-  return (
+functionApp(){
+  return(
     <div className="app">
       <HomePage />
     </div>
-  );
+  ) ;
 }
-
-ReactDom.render(<App />, document.querySelect('.root'));
 ```
