@@ -26,6 +26,20 @@ Routing `src/routes.tsx` is configured in .
 | routes    | routing configuration              | `RouteObject[]` | -        |
 | animated  | Turn off page transition animation | `boolean`       | `true`   |
 
+### RouteObject
+
+```typescript
+// import { RouteObject } from 'react-router-dom';
+
+export interface RouteObject {
+  caseSensitive?: boolean;
+  children?: RouteObject[];
+  element?: React.ReactNode;
+  index?: boolean;
+  path?: string;
+}
+```
+
 ## common problem
 
 ### Using history in non-component modules
