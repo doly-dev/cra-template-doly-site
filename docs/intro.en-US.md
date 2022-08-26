@@ -50,4 +50,35 @@ The final adoption `React` official scaffold extension, community activists, upg
 
 By default, the generated project supports all modern browsers.
 
-If you need a polyfill to support Internet Explorer 9, 10, and 11, please use [react-app-polyfill](https://github.com/facebook/create-react-app/tree/master/packages/react-app-polyfill) .
+If you need a polyfill to support Internet Explorer 9, 10, and 11, please use [react-app-polyfill](https://github.com/facebook/create-react-app/tree/master/packages/react-app-polyfill) . It also needs to `package.json` be configured `browserslist` in .
+
+Compatible with ie9 Example:
+
+`src/index.tsx`
+
+```typescript
+// first line import
+import 'react-app-polyfill/ie9';
+import 'react-app-polyfill/stable';
+
+// ...
+```
+
+`package.json`
+
+```typescript
+{
+  "browserslist":{
+    "production":[
+      // ...
+      "ie >= 9"
+    ] ,
+
+    // If you need the development environment to be compatible with ie9, set development
+    "development":[
+      // ...
+      "ie >= 9"
+    ]
+  }
+}
+```

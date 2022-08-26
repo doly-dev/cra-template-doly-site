@@ -50,4 +50,35 @@ nav:
 
 默认情况下，生成的项目支持所有现代浏览器。
 
-如果要支持 Internet Explorer 9、10 和 11 需要 polyfill，请使用 [react-app-polyfill](https://github.com/facebook/create-react-app/tree/master/packages/react-app-polyfill) 。
+如果要支持 Internet Explorer 9、10 和 11 需要 polyfill，请使用 [react-app-polyfill](https://github.com/facebook/create-react-app/tree/master/packages/react-app-polyfill) 。另外还需要在 `package.json` 中配置 `browserslist` 。
+
+兼容 ie9 示例:
+
+`src/index.tsx`
+
+```typescript
+// 第一行引入
+import 'react-app-polyfill/ie9';
+import 'react-app-polyfill/stable';
+
+// ...
+```
+
+`package.json`
+
+```typescript
+{
+  "browserslist": {
+    "production": [
+      // ...
+      "ie >= 9"
+    ],
+
+    // 如果你需要开发环境也兼容ie9就设置 development
+    "development": [
+      // ...
+      "ie >= 9"
+    ]
+  }
+}
+```
