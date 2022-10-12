@@ -1,5 +1,5 @@
 ---
-title: asyncComponent
+title: AsyncComponent
 order: 23
 group:
   title: 内置组件
@@ -10,7 +10,7 @@ nav:
   order: 1
 ---
 
-# asyncComponent - 异步组件
+# AsyncComponent - 异步组件
 
 使用 react 的 `Suspense` `lazy` 处理异步组件加载，设置页面标题。
 

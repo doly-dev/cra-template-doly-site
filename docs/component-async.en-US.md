@@ -1,5 +1,5 @@
 ---
-title: asyncComponent
+title: AsyncComponent
 order: 23
 group:
   title: Built-in components
