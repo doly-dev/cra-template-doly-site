@@ -78,21 +78,6 @@ const WrapperDetailPage = (props: any) => {
 export default WrapperDetailPage;
 ```
 
-**Also set the title when `src/components/PageContainer` adding page activation**
-
-```typescript
-import { useActivate } from 'react-activation';
-
-// ...
-
-React.useEffect(() => {
-  setPageTitle();
-}, [setPageTitle]);
-
-// set the title when the page is activated
-useActivate(setPageTitle);
-```
-
 ## FAQ
 
 - [当前缓存页面 useActivate 会执行多次](https://github.com/CJY0208/react-activation/issues/111) - 由 React.StrictMode 影响。查阅 [严格模式](https://zh-hans.reactjs.org/docs/strict-mode.html)

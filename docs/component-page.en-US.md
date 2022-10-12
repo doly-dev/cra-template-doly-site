@@ -12,12 +12,8 @@ nav:
 
 # PageContainer
 
-The page should be wrapped with this container for setting the html title and page styles. You can also modify the component directly.
+The page should be wrapped in this container for the page to switch animation styles. You can also modify the component directly.
 
 ## API
 
-The rest are the `div` same .
-
-| parameter | illustrate | type     | Defaults |
-| --------- | ---------- | -------- | -------- |
-| title     | html title | `string` | -        |
+Like `div` .

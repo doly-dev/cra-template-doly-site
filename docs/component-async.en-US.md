@@ -10,20 +10,13 @@ nav:
   order: 1
 ---
 
-# asyncComponent - Asynchronous component loading
+# AsyncComponent - Asynchronous component
 
-`Suspense` `lazy` Handle asynchronous component loading with React .
+`Suspense` `lazy` Handle asynchronous component loading with React, and set page title.
 
-```typescript
-import asyncComponent from '@/components/asyncComponent';
+## API
 
-const HomePage = asyncComponent ( ( ) => import ( './pages/home' ) ) ;
-
-functionApp(){
-  return(
-    <div className="app">
-      <HomePage />
-    </div>
-  ) ;
-}
-```
+| parameter | illustrate             | type                                         | Defaults |
+| --------- | ---------------------- | -------------------------------------------- | -------- |
+| component | Asynchronous component | `() => Promise<{ default: Component<any> }>` | -        |
+| title     | page title             | `string`                                     | -        |
