@@ -75,6 +75,13 @@ export default defineConfig({
       }
     ]
   },
+  // esbuild: NODE_ENV !== 'production',
+  nodeModulesTransform: {
+    type: 'all'
+  },
+  targets: {
+    ie: 11
+  },
   ...prodConfig
 
   // more config: https://d.umijs.org/config
