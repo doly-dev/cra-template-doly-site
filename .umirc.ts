@@ -6,13 +6,15 @@ const MajorVersionNumber = pkg.version.split('.')[0];
 const versionSiteRoot = `refs/heads/v${MajorVersionNumber}`;
 const version = BUIDL_DOC_VERSION ? versionSiteRoot : 'latest';
 
-const serverRootDirect = NODE_ENV === 'production' ? `/${pkg.name}/` : '/';
+const isDev = NODE_ENV === 'development';
+
+const serverRootDirect = !isDev ? `/${pkg.name}/` : '/';
 const outputPath = 'dist';
 const publicPath = serverRootDirect + version + '/';
 
 let prodConfig: any = {};
 
-if (NODE_ENV === 'production') {
+if (!isDev) {
   prodConfig.headScripts = [
     { src: 'https://www.googletagmanager.com/gtag/js?id=G-CTKFHCWM1R', async: true },
     {
@@ -77,7 +79,7 @@ export default defineConfig({
   },
   // esbuild: NODE_ENV !== 'production',
   nodeModulesTransform: {
-    type: 'all'
+    type: isDev ? 'none' : 'all'
   },
   targets: {
     ie: 11
