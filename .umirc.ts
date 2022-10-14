@@ -55,8 +55,8 @@ export default defineConfig({
   hash: true,
   title: 'cra-template-doly',
   mode: 'site',
-  logo: 'https://www.caijinfeng.com/assets/images/logo-doly@3x.png',
-  favicon: 'https://www.caijinfeng.com/assets/images/doly-touch-icon_48x48.png',
+  logo: 'https://doly-dev.github.io/logo.png',
+  favicon: 'https://doly-dev.github.io/favicon.ico',
   locales: [
     ['zh-CN', '中文'],
     ['en-US', 'English']
