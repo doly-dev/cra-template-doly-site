@@ -56,7 +56,7 @@ export default defineConfig({
   title: 'cra-template-doly',
   mode: 'site',
   logo: 'https://doly-dev.github.io/logo.png',
-  favicon: 'https://doly-dev.github.io/favicon.ico',
+  favicon: 'https://doly-dev.github.io/favicon.png',
   locales: [
     ['zh-CN', '中文'],
     ['en-US', 'English']
