@@ -16,7 +16,7 @@ nav:
 
 ## API
 
-| parameter | illustrate             | type                                         | Defaults |
-| --------- | ---------------------- | -------------------------------------------- | -------- |
-| component | Asynchronous component | `() => Promise<{ default: Component<any> }>` | -        |
-| title     | page title             | `string`                                     | -        |
+| parameter | illustrate | type | Defaults |
+| --- | --- | --- | --- |
+| component | Synchronous/asynchronous components | `(() => Promise<{ default: Component<any> }>) \| ReactElement` | - |
+| title | page title | `string` | - |

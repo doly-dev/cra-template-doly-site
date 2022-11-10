@@ -12,20 +12,20 @@ nav:
 
 # 常见问题
 
-### 如何在工具模块中使用 history ？
+## 非组件模块中如何跳转页面？
 
-直接使用 `src/utils/history.ts`：
+使用 `src/router.tsx` ：
 
 ```typescript
-import myHistory from '@/utils/history';
+import router from '@/router';
 
 // util function
 function xxx() {
-  myHistory.push('/');
+  router.navigate('/list');
 }
 ```
 
-### 报错 `Property 'encodeLocation' is missing in type 'HashHistory' but required in type 'History'.`
+## 报错 `Property 'encodeLocation' is missing in type 'HashHistory' but required in type 'History'.`
 
 使用 react-router-dom@6.4 之前版本 的项目，重新安装依赖后，可能会报错如下：
 
@@ -35,7 +35,7 @@ function xxx() {
 
 package.json 锁定 `react-router-dom@~6.3.0` 依赖版本即可。
 
-### 如何关闭路由切换动画？
+## 如何关闭路由切换动画？
 
 `src/index.tsx` 中的 `AnimatedRoutes` 组件设置 `animated={false}`
 
@@ -46,7 +46,7 @@ package.json 锁定 `react-router-dom@~6.3.0` 依赖版本即可。
 />
 ```
 
-### 按需加载 `antd` ？
+## 按需加载 `antd@4` ？
 
 安装依赖 `babel-plugin-import`
 
@@ -56,13 +56,13 @@ yarn add babel-plugin-import --dev
 
 修改文件 `config/config.js` 配置
 
-```
+```javascript
 // ...
 babel: {
   plugins: [
     ...whenProd(() => [['transform-remove-console', { exclude: ['error', 'warn'] }]], []),
     ['import', { libraryName: 'antd', libraryDirectory: 'lib', style: true }, 'antd']
-  ]
+  ];
 }
 ```
 
@@ -127,108 +127,4 @@ function App() {
   // ...
   return <Auth>{/*//...*/}</Auth>;
 }
-```
-
-### 怎么实现路由权限？
-
-1. 全局维护一个权限数据，假如使用 `mobx` 建议在 `models/access.ts` 中存放权限表数据，方便全局使用。
-
-2. 路由配置增加 `access` 配置项，并且增加一个没有权限页面（如 403）
-
-**src/components/Router/index.tsx**
-
-```typescript
-// ...
-
-export type Access = boolean | ((route: Omit<RouteItem, 'access' | 'component'>) => boolean);
-export type RouteItem = {
-  // ...
-  access?: Access;
-};
-
-// ...
-export const AnimatedRoute: React.FC<Omit<RouteItem, 'routes'>> = (props) => {
-  const {
-    path,
-    redirect,
-    component: C,
-    animated = true,
-    keepAlive = true,
-    keepAliveName,
-    keepAliveParamsKey,
-    access = true
-  } = props;
-
-  if (redirect) {
-    return (
-      <Route exact path={path}>
-        <Redirect from="*" to={redirect} />
-      </Route>
-    );
-  }
-
-  if (!C) {
-    return null;
-  }
-
-  if ((typeof access === 'function' && !access(omit(props, ['component', 'access']))) || !access) {
-    return (
-      <Route exact path={path}>
-        <Redirect from="*" to='/403' />
-      </Route>
-    )
-  }
-  // ...
-```
-
-3. 路由配置在需要的页面中添加 `access`
-
-**src/routes.ts**
-
-```typescript
-// ...
-import type { Access } from '@/components/Router';
-import accessModel from '@/models/access';
-
-// 非管理员不能进入内页
-const access: Access = (route) => {
-  const { userinfo } = accessModel;
-  return userinfo.userid === 'admin';
-}
-
-const routes: RouteItem[] = [
-  {
-    path: '/',
-    name: '首页',
-    component: asyncComponent(() => import('./pages/home'))
-  },
-  {
-    path: 'repos',
-    name: '仓库',
-    routes: [
-      {
-        path: 'list',
-        name: '仓库列表',
-        component: asyncComponent(() => import('./pages/repos/List')),
-        access
-      },
-      {
-        path: 'detail/:name',
-        name: '仓库详情',
-        component: asyncComponent(() => import('./pages/repos/Detail')),
-        access
-      }
-    ]
-  },
-  {
-    path: '403',
-    name: '无权限',
-    component: asyncComponent(() => import('./pages/403'))
-  }
-  {
-    path: '404',
-    name: '页面不存在',
-    component: asyncComponent(() => import('./pages/404'))
-  }
-];
 ```

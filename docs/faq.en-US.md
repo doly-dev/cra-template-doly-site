@@ -12,20 +12,20 @@ nav:
 
 # FAQ
 
-### How to use history in the tool module?
+## How to jump pages in non-component modules?
 
-Direct use `src/utils/history.ts` :
+Use directly `src/router.tsx` :
 
 ```typescript
-import myHistory from '@/utils/history';
+import router from '@/router';
 
 // util function
 function xxx() {
-  myHistory.push('/');
+  router.navigate('/list');
 }
 ```
 
-### error message `Property 'encodeLocation' is missing in type 'HashHistory' but required in type 'History'.`
+## error message `Property 'encodeLocation' is missing in type 'HashHistory' but required in type 'History'.`
 
 If you use a project earlier than react-router-dom@6.4, you may receive the following error after reinstalling dependencies:
 
@@ -35,7 +35,7 @@ This is because the react-router@6.4 version removes the history dependency and 
 
 package.json lock 'react-router-dom@~6.3.0' dependent version.
 
-### How to turn off the route switching animation?
+## How to turn off the route switching animation?
 
 `src/index.tsx` The `AnimatedRoutes` component settings `animated={false}`
 
@@ -46,7 +46,7 @@ package.json lock 'react-router-dom@~6.3.0' dependent version.
 />
 ```
 
-### Load on demand `antd`?
+## Load on demand `antd@4`?
 
 Install dependencies `babel-plugin-import`
 
@@ -56,17 +56,17 @@ yarn add babel-plugin-import --dev
 
 Modify file `config/config.js` configuration
 
-```
+```javascript
 // ...
 babel: {
   plugins: [
     ...whenProd(() => [['transform-remove-console', { exclude: ['error', 'warn'] }]], []),
     ['import', { libraryName: 'antd', libraryDirectory: 'lib', style: true }, 'antd']
-  ]
+  ];
 }
 ```
 
-### How to elegantly implement login verification for the pre-login project?
+## How to elegantly implement login verification for the pre-login project?
 
 > This scheme is suitable for login and current project which are not in the same project and require complex token conversion.
 >
@@ -127,108 +127,4 @@ function App() {
   // ...
   return <Auth>{/*//...*/}</Auth>;
 }
-```
-
-### How to achieve routing permissions?
-
-1. Maintain a permission data globally. If it is used, it is `mobx` recommended `models/access.ts` to store permission table data in , which is convenient for global use.
-
-2. `access` Add a configuration item to the routing configuration , and add a page without permission (such as 403)
-
-**src/components/Router/index.tsx**
-
-```typescript
-// ...
-
-export type Access = boolean | ((route: Omit<RouteItem, 'access' | 'component'>) => boolean);
-export type RouteItem = {
-  // ...
-  access?: Access;
-};
-
-// ...
-export const AnimatedRoute: React.FC<Omit<RouteItem, 'routes'>> = (props) => {
-  const {
-    path,
-    redirect,
-    component: C,
-    animated = true,
-    keepAlive = true,
-    keepAliveName,
-    keepAliveParamsKey,
-    access = true
-  } = props;
-
-  if (redirect) {
-    return (
-      <Route exact path={path}>
-        <Redirect from="*" to={redirect} />
-      </Route>
-    );
-  }
-
-  if (!C) {
-    return null;
-  }
-
-  if ((typeof access === 'function' && !access(omit(props, ['component', 'access']))) || !access) {
-    return (
-      <Route exact path={path}>
-        <Redirect from="*" to='/403' />
-      </Route>
-    )
-  }
-  // ...
-```
-
-3. Routing configuration is added in the required page `access`
-
-**src/routes.ts**
-
-```typescript
-// ...
-import type { Access } from '@/components/Router';
-import accessModel from '@/models/access';
-
-// Non-administrators cannot enter the inner page
-const access: Access = (route) => {
-  const { userinfo } = accessModel;
-  return userinfo.userid === 'admin';
-}
-
-const routes: RouteItem[] = [
-  {
-    path: '/',
-    name: '首页',
-    component: asyncComponent(() => import('./pages/home'))
-  },
-  {
-    path: 'repos',
-    name: '仓库',
-    routes: [
-      {
-        path: 'list',
-        name: '仓库列表',
-        component: asyncComponent(() => import('./pages/repos/List')),
-        access
-      },
-      {
-        path: 'detail/:name',
-        name: '仓库详情',
-        component: asyncComponent(() => import('./pages/repos/Detail')),
-        access
-      }
-    ]
-  },
-  {
-    path: '403',
-    name: '无权限',
-    component: asyncComponent(() => import('./pages/403'))
-  }
-  {
-    path: '404',
-    name: '页面不存在',
-    component: asyncComponent(() => import('./pages/404'))
-  }
-];
 ```

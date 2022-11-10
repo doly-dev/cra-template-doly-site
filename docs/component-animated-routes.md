@@ -16,7 +16,7 @@ nav:
 
 **特性**
 
-- 使用 [`react-router-dom@6`](https://reactrouter.com/docs/en/v6/api#api-reference) 封装
+- 使用 [`react-router-dom@6`](https://reactrouter.com/docs/en/v6/api#api-reference)
 - 支持路由切换动画，页面请使用 `PageContainer` 包裹
 
 ## API
@@ -42,15 +42,15 @@ export interface RouteObject {
 
 ## 常见问题
 
-### 非组件模块中使用 history
+### 非组件模块中如何跳转页面？
 
-直接使用 `src/utils/history.ts` ：
+使用 `src/router.tsx` ：
 
 ```typescript
-import myHistory from '@/utils/history';
+import router from '@/router';
 
 // util function
 function xxx() {
-  myHistory.push('/');
+  router.navigate('/list');
 }
 ```

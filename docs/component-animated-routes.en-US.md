@@ -42,15 +42,15 @@ export interface RouteObject {
 
 ## common problem
 
-### Using history in non-component modules
+### How to jump pages in non-component modules?
 
-Use directly `src/utils/history.ts` :
+Use directly `src/router.tsx` :
 
 ```typescript
-import myHistory from '@/utils/history';
+import router from '@/router';
 
 // util function
 function xxx() {
-  myHistory.push('/');
+  router.navigate('/list');
 }
 ```
