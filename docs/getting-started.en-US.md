@@ -54,7 +54,7 @@ npx create-react-app my-app --template doly
 │   ├── utils                # tools
 │   ├── index.tsx            # Project entry file
 │   ├── index.less           # Global style
-│   ├── router.ts            # routing configuration
+│   ├── router.tsx           # routing configuration
 ├── package.json
 ├── README.md
 ```
