@@ -25,6 +25,16 @@ function xxx() {
 }
 ```
 
+### error message `Property 'encodeLocation' is missing in type 'HashHistory' but required in type 'History'.`
+
+If you use a project earlier than react-router-dom@6.4, you may receive the following error after reinstalling dependencies:
+
+![faq-react-router-dom6.4-error-tip.jpg](./images/faq-react-router-dom6.4-error-tip.jpg)
+
+This is because the react-router@6.4 version removes the history dependency and adds the RouterProvider.
+
+package.json lock 'react-router-dom@~6.3.0' dependent version.
+
 ### How to turn off the route switching animation?
 
 `src/index.tsx` The `AnimatedRoutes` component settings `animated={false}`

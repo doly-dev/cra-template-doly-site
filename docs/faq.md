@@ -25,6 +25,16 @@ function xxx() {
 }
 ```
 
+### 报错 `Property 'encodeLocation' is missing in type 'HashHistory' but required in type 'History'.`
+
+使用 react-router-dom@6.4 之前版本 的项目，重新安装依赖后，可能会报错如下：
+
+![faq-react-router-dom6.4-error-tip.jpg](./images/faq-react-router-dom6.4-error-tip.jpg)
+
+这是因为react-router@6.4版本去掉了 history 依赖，新增了 RouterProvider 。
+
+package.json 锁定 `react-router-dom@~6.3.0` 依赖版本即可。
+
 ### 如何关闭路由切换动画？
 
 `src/index.tsx` 中的 `AnimatedRoutes` 组件设置 `animated={false}`
