@@ -30,7 +30,7 @@ npx create-react-app my-app --template doly
 
 ## Directory Structure
 
-```
+```text
 .
 ├── config
 │   ├── config.js            # craco configuration file

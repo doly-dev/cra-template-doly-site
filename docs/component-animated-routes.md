@@ -12,7 +12,7 @@ nav:
 
 # AnimatedRoutes - 路由
 
-路由在 `src/routes.tsx` 中配置。
+路由在 `src/router.tsx` 中配置。
 
 **特性**
 

@@ -12,7 +12,7 @@ nav:
 
 # AnimatedRoutes - route
 
-Routing `src/routes.tsx` is configured in .
+Routing `src/router.tsx` is configured in .
 
 **characteristic**
 

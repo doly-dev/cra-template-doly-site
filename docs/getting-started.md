@@ -30,7 +30,7 @@ npx create-react-app my-app --template doly
 
 ## 目录结构
 
-```
+```text
 .
 ├── config
 │   ├── config.js            # craco 配置文件

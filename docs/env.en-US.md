@@ -16,7 +16,7 @@ In `config/env.js` the configuration variables and various operating environment
 
 The following are the commonly used environment variables:
 
-```
+```text
 PUBLIC_URL         # Static resource base path
 REACT_APP_ENV      # Application operating environment dev test prod
 REACT_APP_API      # Interface basic path
@@ -34,7 +34,7 @@ console.log(process.env.REACT_APP_ENV);
 
 `src/utils/request.ts` You can see the following code in:
 
-```
+```text
 baseURL: process.env.REACT_APP_API
 ```
 

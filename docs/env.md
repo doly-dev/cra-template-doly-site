@@ -16,7 +16,7 @@ nav:
 
 以下是常用的环境变量：
 
-```
+```text
 PUBLIC_URL         # 静态资源基础路径
 REACT_APP_ENV      # 应用运行环境 dev test prod
 REACT_APP_API      # 接口基础路径
@@ -34,7 +34,7 @@ console.log(process.env.REACT_APP_ENV);
 
 `src/utils/request.ts` 中可以看到如下代码：
 
-```
+```text
 baseURL: process.env.REACT_APP_API
 ```
 
