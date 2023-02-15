@@ -27,7 +27,7 @@ nav:
 
 脚手架内没有集成数据管理库，你可以自由选择，也可以看看[第三方库推荐](/docs/third)。
 
-如果是小项目基本可以不用数据管理库，直接使用 `useState` `useReducer` 就可以。
+如果是小项目基本可以不用数据管理库，直接使用 `useState` `useReducer` `useContext` 就可以。
 
 这里推荐使用 [mobx-state-tree](https://github.com/mobxjs/mobx-state-tree) ，[参考示例 - 集成 MST](/docs/example-mst) 。
 

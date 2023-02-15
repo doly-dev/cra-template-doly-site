@@ -27,7 +27,7 @@ Based on [Create React App](https://create-react-app.dev/) + [craco](https://git
 
 There is no integrated data management library in the scaffolding, you can choose freely, or you can look at [third-party library recommendations](/en-US/docs/third) .
 
-If the project is a small basic data management library can not directly use `useState` `useReducer` can be.
+If the project is a small basic data management library can not directly use `useState` `useReducer` `useContext` can be.
 
 It is recommended to use [mobx-state-tree](https://github.com/mobxjs/mobx-state-tree) ，[refer to the example-integrated MST](/en-US/docs/example-mst) .
 
