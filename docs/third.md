@@ -48,6 +48,7 @@ nav:
 ## mock 数据
 
 - [mockjs]
+- [mockjs-extend]
 - [faker]
 
 ## 动画效果
@@ -56,9 +57,17 @@ nav:
 - [react-spring]
 - [Animate.css]
 
+## 缓存管理
+
+- [cache2]
+- [store2]
+
 [vconsole]: https://github.com/Tencent/vConsole
 [eruda]: https://github.com/liriliri/eruda
 [mockjs]: https://github.com/nuysoft/Mock/wiki
+[mockjs-extend]: https://www.npmjs.com/package/mockjs-extend
+[cache2]: https://www.npmjs.com/package/cache2
+[store2]: https://www.npmjs.com/package/store2
 [faker]: https://github.com/faker-js/faker
 [hox]: https://github.com/umijs/hox
 [mobx]: https://github.com/mobxjs/mobx
