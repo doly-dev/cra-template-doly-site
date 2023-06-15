@@ -20,6 +20,7 @@ nav:
 - [semi]
 - [arco]
 - [nextui]
+- [daisyui]
 
 ## Icon
 
@@ -38,6 +39,7 @@ nav:
 
 ## Business tool approach
 
+- [ut2]
 - [util-helpers]
 
 ## Mobile debugging console tool
@@ -50,6 +52,11 @@ nav:
 - [mockjs]
 - [mockjs-extend]
 - [faker]
+
+## Style libraries
+
+- [polished]
+- [tailwindcss]
 
 ## Animation effect
 
@@ -88,3 +95,7 @@ nav:
 [semi]: https://semi.design/
 [arco]: https://arco.design/
 [doly-icons]: https://doly-dev.github.io/doly-icons/latest/index.html
+[ut2]: https://www.npmjs.com/package/ut2
+[polished]: https://polished.js.org/docs/
+[daisyui]: https://daisyui.com/
+[tailwindcss]: https://tailwindcss.com/

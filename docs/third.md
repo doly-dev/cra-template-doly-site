@@ -20,6 +20,7 @@ nav:
 - [semi]
 - [arco]
 - [nextui]
+- [daisyui]
 
 ## 图标库
 
@@ -36,8 +37,9 @@ nav:
 - [rc-hooks]
 - [ahooks]
 
-## 业务工具方法
+## 工具方法
 
+- [ut2]
 - [util-helpers]
 
 ## 移动端调试控制台工具
@@ -50,6 +52,11 @@ nav:
 - [mockjs]
 - [mockjs-extend]
 - [faker]
+
+## 样式库
+
+- [polished]
+- [tailwindcss]
 
 ## 动画效果
 
@@ -88,3 +95,7 @@ nav:
 [semi]: https://semi.design/
 [arco]: https://arco.design/
 [doly-icons]: https://doly-dev.github.io/doly-icons/latest/index.html
+[ut2]: https://www.npmjs.com/package/ut2
+[polished]: https://polished.js.org/docs/
+[daisyui]: https://daisyui.com/
+[tailwindcss]: https://tailwindcss.com/
