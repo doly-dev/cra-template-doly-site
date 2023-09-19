@@ -7,17 +7,17 @@ The documentation source of [cra-template-doly](https://github.com/doly-dev/cra-
 Install dependencies,
 
 ```bash
-$ npm i
+$ pnpm i
 ```
 
 Start the dev server,
 
 ```bash
-$ npm start
+$ pnpm start
 ```
 
 Build site app,
 
 ```bash
-$ npm run build
+$ pnpm run build
 ```
