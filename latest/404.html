@@ -13,13 +13,13 @@
     />
     <link
       rel="stylesheet"
-      href="/cra-template-doly-site/latest/vendors.331878c1.chunk.css"
+      href="/cra-template-doly-site/latest/vendors.3dfdd0be.chunk.css"
     />
     <script>
       window.routerBase = "/";
     </script>
     <script>
-      //! umi version: 3.5.20
+      //! umi version: 3.5.41
     </script>
     <script
       src="https://www.googletagmanager.com/gtag/js?id=G-CTKFHCWM1R"
@@ -35,12 +35,15 @@
     </script>
     <script>
       !(function () {
-        var e = localStorage.getItem("dumi:prefers-color"),
-          t = window.matchMedia("(prefers-color-scheme: dark)").matches,
-          r = ["light", "dark", "auto"];
+        var e =
+            navigator.cookieEnabled && void 0 !== window.localStorage
+              ? localStorage.getItem("dumi:prefers-color")
+              : "auto",
+          o = window.matchMedia("(prefers-color-scheme: dark)").matches,
+          t = ["light", "dark", "auto"];
         document.documentElement.setAttribute(
           "data-prefers-color",
-          e === r[2] ? (t ? r[1] : r[0]) : r.indexOf(e) > -1 ? e : r[0]
+          e === t[2] ? (o ? t[1] : t[0]) : t.indexOf(e) > -1 ? e : t[0]
         );
       })();
     </script>
@@ -48,7 +51,7 @@
   <body>
     <div id="root"></div>
 
-    <script src="/cra-template-doly-site/latest/vendors.ee4b3586.async.js"></script>
-    <script src="/cra-template-doly-site/latest/umi.ed6e35f0.js"></script>
+    <script src="/cra-template-doly-site/latest/vendors.1305c4b7.async.js"></script>
+    <script src="/cra-template-doly-site/latest/umi.a046e89c.js"></script>
   </body>
 </html>
