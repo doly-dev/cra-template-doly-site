@@ -12,7 +12,7 @@ nav:
 
 # Git hooks
 
-Git hook management is provided by [yorkie](https://www.npmjs.com/package/yorkie) and [lint-staged](https://www.npmjs.com/package/lint-staged) .
+Git hook management is provided by [husky](https://www.npmjs.com/package/husky) .
 
 ## Canonical code format
 

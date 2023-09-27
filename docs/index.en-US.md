@@ -29,6 +29,8 @@ yarn create react-app my-app --template doly # Create an application
 
 cd my-app
 
+npx husky install # to support `husky` `lint-staged` `eslint` `prettier` `commitlint`
+
 yarn start # Start local development service
 ```
 
@@ -42,6 +44,8 @@ _Or you are using `npm` :_
 npx create-react-app my-app --template doly # Create an application
 
 cd my-app
+
+npx husky install # to support `husky` `lint-staged` `eslint` `prettier` `commitlint`
 
 npm start # Start local development service
 ```

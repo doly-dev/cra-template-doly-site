@@ -29,6 +29,8 @@ yarn create react-app my-app --template doly # 创建一个应用
 
 cd my-app
 
+npx husky install # 为了支持 `husky` `lint-staged` `eslint` `prettier` `commitlint`
+
 yarn start # 启动本地开发服务
 ```
 
@@ -42,6 +44,8 @@ _或者你使用的是 `npm`_
 npx create-react-app my-app --template doly # 创建一个应用
 
 cd my-app
+
+npx husky install # 为了支持 `husky` `lint-staged` `eslint` `prettier` `commitlint`
 
 npm start # 启动本地开发服务
 ```

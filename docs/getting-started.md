@@ -20,12 +20,16 @@ nav:
 
 ```bash
 yarn create react-app my-app --template doly
+
+# or
+
+npx create-react-app my-app --template doly
 ```
 
-或
+然后，为了支持 `husky` `lint-staged` `eslint` `prettier` `commitlint` 首先运行：
 
 ```bash
-npx create-react-app my-app --template doly
+npx husky install
 ```
 
 ## 目录结构

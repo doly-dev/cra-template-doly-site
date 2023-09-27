@@ -8,4 +8,5 @@ dist
 docs/images
 yarn.lock
 package-lock.json
+pnpm-lock.yaml
 .editorconfig

@@ -12,11 +12,11 @@ nav:
 
 # AnimatedRoutes - route
 
-Routing `src/router.tsx` is configured in .
+> Routing `src/router.tsx` is configured in .
 
 **characteristic**
 
-- use package [`react-router-dom@6`](https://reactrouter.com/docs/en/v6/api#api-reference)
+- use package [`react-router-dom@6`](https://reactrouter.com/)
 - Support routing switching animation, please use the `PageContainer` package
 
 ## API

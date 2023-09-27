@@ -20,12 +20,16 @@ nav:
 
 ```bash
 yarn create react-app my-app --template doly
+
+# or
+
+npx create-react-app my-app --template doly
 ```
 
-Or
+Then, to support `husky` `lint-staged` `eslint` `prettier` `commitlint` run firstly:
 
 ```bash
-npx create-react-app my-app --template doly
+npx husky install
 ```
 
 ## Directory Structure
@@ -63,7 +67,7 @@ npx create-react-app my-app --template doly
 
 ## Startup project
 
-```bash
+```shell
 yarn start
 ```
 
@@ -71,7 +75,7 @@ The browser automatically accesses it `http://localhost:3000` .
 
 ## Build
 
-```bash
+```shell
 yarn build
 ```
 
