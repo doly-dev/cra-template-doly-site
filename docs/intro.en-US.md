@@ -36,11 +36,10 @@ It is recommended to use [mobx-state-tree](https://github.com/mobxjs/mobx-state-
 In the past, some build tools and scaffolding were made internally, such as [doly-cli](https://www.npmjs.com/package/doly-cli) and [ale-cli](https://www.npmjs.com/package/ale-cli), but later they didn't have the time and energy to maintain them.
 
 - Tools/scaffolding are not unified, and the update and maintenance are not timely
-- Most simple projects do not need to support SSR
-- I don’t want to be based on a big and comprehensive tool like umijs
+- Most projects do not need to support SSR
 - ...
 
-The final adoption `React` official scaffold extension, community activists, upgrade and maintenance.
+The final adoption `React` official scaffold extension, upgrade and maintenance.
 
 > The scaffolding does not support SSR. If you need to implement SSR, [Next.js](https://www.nextjs.cn/) recommended .
 

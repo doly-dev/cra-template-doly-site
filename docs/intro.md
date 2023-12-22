@@ -36,11 +36,10 @@ nav:
 以前内部也做了一些构建工具和脚手架，比如 [doly-cli](https://www.npmjs.com/package/doly-cli)、[ale-cli](https://www.npmjs.com/package/ale-cli)，后来都没有时间精力维护。
 
 - 工具/脚手架不统一、更新维护不及时
-- 大部分简单项目不需要支持 SSR
-- 不想基于 umijs 这样大而全的工具
+- 大部分项目不需要支持 SSR
 - ...
 
-最终采用 `React` 官方脚手架扩展，社区活跃，升级维护方便。
+最终采用 `React` 官方脚手架扩展，升级维护方便。
 
 > 该脚手架不支持 SSR 。如果需要实现 SSR ，推荐 [Next.js](https://www.nextjs.cn/) 或 [Remix](https://remix.run/) 。
 
