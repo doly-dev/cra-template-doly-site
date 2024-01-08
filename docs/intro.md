@@ -29,7 +29,7 @@ nav:
 
 如果是小项目基本可以不用数据管理库，直接使用 `useState` `useReducer` `useContext` 就可以。
 
-这里推荐使用 [mobx-state-tree](https://github.com/mobxjs/mobx-state-tree) ，[参考示例 - 集成 MST](/docs/example-mst) 。
+这里推荐使用 [valtio](https://valtio.pmnd.rs/)。
 
 ## 为什么选择 CRA 扩展？
 

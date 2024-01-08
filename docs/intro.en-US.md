@@ -29,7 +29,7 @@ There is no integrated data management library in the scaffolding, you can choos
 
 If the project is a small basic data management library can not directly use `useState` `useReducer` `useContext` can be.
 
-It is recommended to use [mobx-state-tree](https://github.com/mobxjs/mobx-state-tree) ，[refer to the example-integrated MST](/en-US/docs/example-mst) .
+It is recommended to use [valtio](https://valtio.pmnd.rs/) .
 
 ## Why choose CRA extension?
 

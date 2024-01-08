@@ -25,9 +25,12 @@ nav:
 ## Icon
 
 - [doly-icons]
+- [iconpark]
+- [iconfont]
 
 ## State management
 
+- [valtio]
 - [mobx] + [mobx-state-tree]
 - [redux]
 - [hox]
@@ -99,3 +102,6 @@ nav:
 [polished]: https://polished.js.org/docs/
 [daisyui]: https://daisyui.com/
 [tailwindcss]: https://tailwindcss.com/
+[valtio]: https://valtio.pmnd.rs/
+[iconpark]: https://iconpark.oceanengine.com/
+[iconfont]: https://www.iconfont.cn/
