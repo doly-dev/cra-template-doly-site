@@ -26,33 +26,32 @@ yarn add react-activation
 
 1. `config/config.js` configure babel
 
-```javascript
+```diff
 babel: {
   plugins: [
     // ...
-    'react-activation/babel'
++    'react-activation/babel'
   ];
 }
 ```
 
-2. `src/router.tsx` package `AliveScope` component
+2. `src/index.tsx` package `AliveScope` component
 
-```typescript
-import { AliveScope } from 'react-activation';
+> Note that `React.StrictMode` cannot be used
+
+```diff
++ import { AliveScope } from 'react-activation';
 // ...
 
-const router = createHashRouter(
-  createRoutesFromElements(
-    <Route
-      path="*"
-      element={
-        <AliveScope>
-          <AnimatedRoutes routes={transformCustomRoutes(routes)} />
-        </AliveScope>
-      }
-    />
-  )
-);
+function App() {
+  return (
+    // <React.StrictMode>
++    <AliveScope>
+      <RouterProvider router={router} fallbackElement={<PageLoading />} />
++    </AliveScope>
+    // </React.StrictMode>
+  );
+}
 // ...
 ```
 
@@ -60,36 +59,43 @@ const router = createHashRouter(
 
 Such as `src/pages/repos/Detail.tsx`
 
-```typescript
-import KeepAlive from 'react-activation';
+```diff
++ import KeepAlive from 'react-activation';
 
 // ...
 
-const WrapperDetailPage = (props: any) => {
-  const { name } = useParams();
++ const WrapperDetailPage = (props: any) => {
++  const { name } = useParams();
++
++  return (
++    <KeepAlive name="detail" id={name}>
++      <DetailPage {...props} />
++    </KeepAlive>
++  );
++ };
 
-  return (
-    <KeepAlive name="detail" id={name}>
-      <DetailPage {...props} />
-    </KeepAlive>
-  );
-};
-
-export default WrapperDetailPage;
+- export default DetailPage
++ export default WrapperDetailPage;
 ```
 
 **But also in the `src/components/AsyncComponent` increase set title page is active**
 
-```typescript
-import { useActivate } from 'react-activation';
+```diff
++ import { useActivate } from 'react-activation';
 
 // ...
 
-useActivate(() => {
-  if (title) {
-    document.title = title;
-  }
-});
+- useEffect(() => {
+-  if (title) {
+-    document.title = title;
+-  }
+- }, [title]);
+
++ useActivate(() => {
++  if (title) {
++    document.title = title;
++  }
++ });
 ```
 
 ## FAQ
