@@ -18,7 +18,7 @@ In the process of separate front-end and back-end development, at the beginning,
 
 At this time, the front end needs to simulate the request and response of the interface in order to achieve the purpose of fidelity development. And when debugging some problems, you can fake boundary data for verification.
 
-You only need to `mock` directory, create a new `.js` file, supports the following ways:
+You only need to `mock` directory, create a new `*.mock.js` file, supports the following ways:
 
 ```javascript
 module.export = {
