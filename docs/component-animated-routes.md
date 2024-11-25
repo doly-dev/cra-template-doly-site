@@ -14,7 +14,7 @@ nav:
 
 > 路由在 `src/router.tsx` 中配置。
 
-**特性**
+## 特性
 
 - 使用 [`react-router-dom@6`](https://reactrouter.com/)
 - 支持路由切换动画，页面请使用 `PageContainer` 包裹

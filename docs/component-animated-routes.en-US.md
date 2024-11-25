@@ -14,7 +14,7 @@ nav:
 
 > Routing `src/router.tsx` is configured in .
 
-**characteristic**
+## characteristic
 
 - use package [`react-router-dom@6`](https://reactrouter.com/)
 - Support routing switching animation, please use the `PageContainer` package
