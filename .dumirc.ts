@@ -44,7 +44,6 @@ export default defineConfig({
     type: 'hash'
   },
   hash: true,
-  base: publicPath,
   publicPath,
   outputPath,
   locales: [

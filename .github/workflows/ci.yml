@@ -9,7 +9,7 @@ on:
     paths:
       - .dumi/**
       - docs/**
-      - .umirc.ts
+      - .dumirc.ts
       - .github/workflows/ci.yml
       - README.md
       - package.json
