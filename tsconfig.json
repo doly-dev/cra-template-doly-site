@@ -11,10 +11,12 @@
     "strict": true,
     "paths": {
       "@/*": ["src/*"],
-      "@@/*": ["src/.umi/*"]
+      "@@/*": [".dumi/tmp/*"]
     },
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
   },
+  "include": [".dumirc.ts"],
   "exclude": [
     "node_modules",
     "lib",

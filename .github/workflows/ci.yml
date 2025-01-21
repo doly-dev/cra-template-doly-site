@@ -11,6 +11,8 @@ on:
       - docs/**
       - .umirc.ts
       - .github/workflows/ci.yml
+      - README.md
+      - package.json
 
 jobs:
   build-and-deploy:

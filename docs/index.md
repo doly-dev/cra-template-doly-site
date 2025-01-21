@@ -1,21 +1,21 @@
 ---
 hero:
   title: cra-template-doly
-  desc: 快速构建 React 单页应用
+  description: 快速构建 React 单页应用
   actions:
     - text: 快速上手
       link: /docs/getting-started
 features:
-  - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
+  - emoji: 📦
     title: 开箱即用
-    desc: 基于 React 官方脚手架扩展
-  - icon: https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png
+    description: 基于 React 官方脚手架扩展
+  - emoji: 🚀
     title: 高效开发
-    desc: 内置组件、mock、proxy等
-  - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
+    description: 内置组件、mock、proxy等
+  - emoji: 💡
     title: TypeScript
-    desc: 全量使用 TypeScript 开发
-footer: Open-source MIT Licensed | Copyright © 2021<br />Powered by [dumi](https://d.umijs.org)
+    description: 全量使用 TypeScript 开发
+footer: Open-source MIT Licensed | Copyright © 2021-present
 ---
 
 ## 让我们开始
