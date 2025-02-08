@@ -14,19 +14,25 @@ toc: content
 
 ## 初始化项目
 
-```bash
+:::code-group
+
+```bash [npm]
+npx create-react-app my-app --template doly
+
+cd my-app
+
+npm install # 触发 hook
+```
+
+```bash [yarn]
 yarn create react-app my-app --template doly
 
-# or
+cd my-app
 
-npx create-react-app my-app --template doly
+yarn install # 触发 hook
 ```
 
-然后，为了支持 `husky` `lint-staged` `eslint` `prettier` `commitlint` 首先运行：
-
-```bash
-npx husky install
-```
+:::
 
 ## 目录结构
 

@@ -14,19 +14,25 @@ toc: content
 
 ## Initialize the project
 
-```bash
+:::code-group
+
+```bash [npm]
+npx create-react-app my-app --template doly
+
+cd my-app
+
+npm install # trigger hook
+```
+
+```bash [yarn]
 yarn create react-app my-app --template doly
 
-# or
+cd my-app
 
-npx create-react-app my-app --template doly
+yarn install # trigger hook
 ```
 
-Then, to support `husky` `lint-staged` `eslint` `prettier` `commitlint` run firstly:
-
-```bash
-npx husky install
-```
+:::
 
 ## Directory Structure
 

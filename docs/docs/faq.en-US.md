@@ -70,7 +70,7 @@ babel: {
 
 If the current project must be logged in before entering, it is recommended to extract a separate Authcomponent for login verification. Such as:
 
-**src/components/Auth/index.tsx**
+`src/components/Auth/index.tsx`
 
 ```typescript
 import { tokenChange } from '@/services/common';
@@ -113,7 +113,7 @@ export default Auth;
 
 Put the Auth component in the outermost layer of the project.
 
-**src/index.tsx**
+`src/index.tsx`
 
 ```typescript
 import Auth from '@/components/Auth';
@@ -123,4 +123,59 @@ function App() {
   // ...
   return <Auth>{/*//...*/}</Auth>;
 }
+```
+
+## Package management tools switching to `pnpm` ?
+
+1. Use `pnpm import` to import the lock dependency version file, and then delete `package-lock.json` or `yarn.lock`
+2. Delete the `node_modules` directory
+3. Add the `.npmrc` file to the root of the project, in order to set the dependency flattening
+
+`.npmrc` file:
+
+```text
+shamefully-hoist=true
+auto-install-peers=true # If you are using nodejs <= 16, pnpm < 8, you need to enable this option manually.
+```
+
+4. Reinstall the dependencies using `pnpm install`, and then run the script with the `pnpm` command
+5. `git hook` tool tweaks, upgrade `husky` or change `yorkie` to `husky`
+
+> Since Yorkie and earlier versions of Husky don't support PNPM, an upgrade is required.
+>
+> Here's an example of yorkie changing to `husky@8`
+
+```bash
+# Delete yorkie or lower version husky
+pnpm remove yorkie
+
+# Delete the .git/hooks directory manually
+rm -rf .git/hooks
+
+# Install husky
+pnpm dlx husky-init && pnpm install
+
+# Add git hooks
+npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
+```
+
+Switch the `gitHooks` or `husky` configuration in `package.json` to `.husky`.
+
+Then remove `gitHooks` or `husky` in `package.json`.
+
+For example, `pre-commit`
+
+```bash
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx --no-install lint-staged
+```
+
+6. Whether the running, testing, and building projects are normal
+
+```bash
+pnpm start
+pnpm test
+pnpm build
 ```

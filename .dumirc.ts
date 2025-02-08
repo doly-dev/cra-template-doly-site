@@ -16,6 +16,7 @@ export default defineConfig({
   themeConfig: {
     name: 'cra-template-doly',
     logo: 'https://doly-dev.github.io/logo.png',
+    footer: 'Open-source MIT Licensed | Copyright © 2021-present',
     nav: {
       'zh-CN': [
         {
