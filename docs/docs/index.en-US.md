@@ -37,7 +37,9 @@ In the past, some build tools and scaffolding were made internally, such as [dol
 
 The final adoption `React` official scaffold extension, upgrade and maintenance.
 
-> The scaffolding does not support SSR. If you need to implement SSR, [Next.js](https://www.nextjs.cn/) recommended .
+> The scaffolding does not support SSR. If you need to implement SSR, [Next.js](https://nextjs.org/) recommended .
+>
+> The official is almost no longer maintained, and it is recommended to use [vite-template-doly](https://github.com/doly-dev/vite-template-doly).
 
 ## Compatibility
 

@@ -37,7 +37,9 @@ toc: content
 
 最终采用 `React` 官方脚手架扩展，升级维护方便。
 
-> 该脚手架不支持 SSR 。如果需要实现 SSR ，推荐 [Next.js](https://www.nextjs.cn/) 或 [Remix](https://remix.run/) 。
+> 该脚手架不支持 SSR 。如果需要实现 SSR ，推荐 [Next.js](https://nextjs.org/) 或 [Remix](https://remix.run/) 。
+>
+> 官方几乎不再维护，推荐使用 [vite-template-doly](https://github.com/doly-dev/vite-template-doly)。
 
 ## 兼容性
 
