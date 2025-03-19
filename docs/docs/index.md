@@ -29,7 +29,7 @@ toc: content
 
 ## 为什么选择 CRA 扩展？
 
-以前内部也做了一些构建工具和脚手架，比如 [doly-cli](https://www.npmjs.com/package/doly-cli)、[ale-cli](https://www.npmjs.com/package/ale-cli)，后来都没有时间精力维护。
+以前内部也做了一些构建工具和脚手架，比如 [doly-cli](https://www.npmjs.com/package/doly-cli)，后来都没有时间精力维护。
 
 - 工具/脚手架不统一、更新维护不及时
 - 大部分项目不需要支持 SSR

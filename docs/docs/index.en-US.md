@@ -29,7 +29,7 @@ It is recommended to use [valtio](https://valtio.pmnd.rs/) .
 
 ## Why choose CRA extension?
 
-In the past, some build tools and scaffolding were made internally, such as [doly-cli](https://www.npmjs.com/package/doly-cli) and [ale-cli](https://www.npmjs.com/package/ale-cli), but later they didn't have the time and energy to maintain them.
+In the past, some build tools and scaffolding were made internally, such as [doly-cli](https://www.npmjs.com/package/doly-cli), but later they didn't have the time and energy to maintain them.
 
 - Tools/scaffolding are not unified, and the update and maintenance are not timely
 - Most projects do not need to support SSR
