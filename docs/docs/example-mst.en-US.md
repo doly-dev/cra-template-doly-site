@@ -98,14 +98,13 @@ Note the distinction between number enumeration and string enumeration.
 **services/types/enum.ts**
 
 ```typescript
-// Whether to add watermark
-// 0-no 1-yes
+/**Whether to add watermark */
 export enum EWaterFlag {
   No,
   Yes
 }
 
-// colour
+/**colour */
 export enum EColor {
   Red = 'red',
   Green = 'green',
@@ -121,11 +120,10 @@ export enum EColor {
 import { types } from 'mobx-state-box';
 import { EWaterFlag, EColor } from '@/services/types/enum';
 
-// Whether to add watermark (number enumeration)
-// 0-no 1-yes
+/**Whether to add watermark */
 export const UWaterFlag = types.union(types.literal(EWaterFlag.No), types.literal(EWaterFlag.Yes));
 
-// colour (string enumeration)
+/**colour */
 export const UColor = types.enumeration<EColor>(Object.values(EColor));
 ```
 

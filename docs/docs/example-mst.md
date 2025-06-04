@@ -98,15 +98,13 @@ export default SomeComponent;
 **services/types/enum.ts**
 
 ```typescript
-// 是否添加水印标记
-// 0-不添加 1-添加
+/**是否添加水印标记 0-不添加;1-添加*/
 export enum EWaterFlag {
   No,
   Yes
 }
 
-// 颜色
-// red-红 green-绿 blue-蓝
+/**颜色 red-红;green-绿;blue-蓝*/
 export enum EColor {
   Red = 'red',
   Green = 'green',
@@ -122,12 +120,10 @@ export enum EColor {
 import { types } from 'mobx-state-box';
 import { EWaterFlag, EColor } from '@/services/types/enum';
 
-// 是否添加水印标记（数字枚举）
-// 0-不添加 1-添加
+/**是否添加水印标记（数字枚举） 0-不添加;1-添加*/
 export const UWaterFlag = types.union(types.literal(EWaterFlag.No), types.literal(EWaterFlag.Yes));
 
-// 颜色（字符串枚举）
-// red-红 green-绿 blue-蓝
+/**颜色（字符串枚举） red-红;green-绿;blue-蓝*/
 export const UColor = types.enumeration<EColor>(Object.values(EColor));
 ```
 
