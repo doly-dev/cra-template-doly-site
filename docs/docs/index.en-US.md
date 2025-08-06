@@ -21,11 +21,11 @@ Based on [Create React App](https://create-react-app.dev/) + [craco](https://git
 
 ## What is used for data management?
 
-There is no integrated data management library in the scaffolding, you can choose freely, or you can look at [third-party library recommendations](/en-US/docs/third) .
+There is no integrated data management library in the scaffolding, you can choose freely, or you can look at [third-party library recommendations](/en-US/docs/third) 、[State Management Libraries for React Comparison](https://npm-compare.com/jotai,mobx,react-query,recoil,redux,valtio,xstate,zustand).
 
 If the project is a small basic data management library can not directly use `useState` `useReducer` `useContext` can be.
 
-It is recommended to use [valtio](https://valtio.pmnd.rs/) .
+<!-- It is recommended to use [valtio](https://valtio.pmnd.rs/) . -->
 
 ## Why choose CRA extension?
 

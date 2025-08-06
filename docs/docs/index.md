@@ -21,11 +21,11 @@ toc: content
 
 ## 数据管理要用什么？
 
-脚手架内没有集成数据管理库，你可以自由选择，也可以看看[第三方库推荐](/docs/third)。
+脚手架内没有集成数据管理库，你可以自由选择，也可以看看[第三方库推荐](/docs/third)、["状态管理库"npm包对比](https://npm-compare.com/zh-CN/jotai,mobx,react-query,recoil,redux,valtio,xstate,zustand)。
 
 如果是小项目基本可以不用数据管理库，直接使用 `useState` `useReducer` `useContext` 就可以。
 
-这里推荐使用 [valtio](https://valtio.pmnd.rs/)。
+<!-- 这里推荐使用 [valtio](https://valtio.pmnd.rs/)。 -->
 
 ## 为什么选择 CRA 扩展？
 
