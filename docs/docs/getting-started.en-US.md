@@ -8,6 +8,12 @@ toc: content
 
 # Getting Started
 
+:::warning
+
+Since the cra-template has not been maintained for a long time, it is recommended to use [vite-template-doly](https://github.com/doly-dev/vite-template-doly).
+
+:::
+
 ## Environmental preparation
 
 - [nodejs](http://nodejs.org/) ≧ 14

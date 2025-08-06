@@ -8,6 +8,12 @@ toc: content
 
 # 快速上手
 
+:::warning
+
+由于 cra-template 长期不维护，推荐使用 [vite-template-doly](https://github.com/doly-dev/vite-template-doly)。
+
+:::
+
 ## 环境准备
 
 - [nodejs](http://nodejs.org/) ≧ 14

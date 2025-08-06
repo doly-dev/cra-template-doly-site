@@ -8,6 +8,12 @@ toc: content
 
 # 介绍
 
+:::warning
+
+由于 cra-template 长期不维护，推荐使用 [vite-template-doly](https://github.com/doly-dev/vite-template-doly)。
+
+:::
+
 基于 [Create React App](https://create-react-app.dev/) + [craco](https://github.com/gsoft-inc/craco) 扩展的脚手架，快速构建 `React` 单页应用。
 
 ## 特性
@@ -19,11 +25,11 @@ toc: content
 - 支持 `*.less` `*.module.less`
 - 内置路由组件支持页面切换动画
 
-## 数据管理要用什么？
+## 状态管理要用什么？
 
-脚手架内没有集成数据管理库，你可以自由选择，也可以看看[第三方库推荐](/docs/third)、["状态管理库"npm包对比](https://npm-compare.com/zh-CN/jotai,mobx,react-query,recoil,redux,valtio,xstate,zustand)。
+脚手架没有集成数据管理库，因为大多数小项目基本可以不用数据管理库，直接使用 `useState` `useReducer` `useContext` 就可以。
 
-如果是小项目基本可以不用数据管理库，直接使用 `useState` `useReducer` `useContext` 就可以。
+["状态管理库"npm包对比](https://npm-compare.com/zh-CN/jotai,mobx,react-query,recoil,redux,valtio,xstate,zustand)。
 
 <!-- 这里推荐使用 [valtio](https://valtio.pmnd.rs/)。 -->
 

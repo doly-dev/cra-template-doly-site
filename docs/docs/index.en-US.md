@@ -8,6 +8,12 @@ toc: content
 
 # Introduction
 
+:::warning
+
+Since the cra-template has not been maintained for a long time, it is recommended to use [vite-template-doly](https://github.com/doly-dev/vite-template-doly).
+
+:::
+
 Based on [Create React App](https://create-react-app.dev/) + [craco](https://github.com/gsoft-inc/craco) extension of scaffolding, to quickly build `React` a single-page application.
 
 ## Characteristic
@@ -19,11 +25,11 @@ Based on [Create React App](https://create-react-app.dev/) + [craco](https://git
 - Support `*.less` `*.module.less`
 - Built-in routing component supports page switching animation
 
-## What is used for data management?
+## What is used for state management?
 
-There is no integrated data management library in the scaffolding, you can choose freely, or you can look at [third-party library recommendations](/en-US/docs/third) 、[State Management Libraries for React Comparison](https://npm-compare.com/jotai,mobx,react-query,recoil,redux,valtio,xstate,zustand).
+The scaffolding does not integrate a state management library because most small projects can basically do without one and can directly use `useState`, `useReducer`, and `useContext`.
 
-If the project is a small basic data management library can not directly use `useState` `useReducer` `useContext` can be.
+[State Management Libraries for React Comparison](https://npm-compare.com/jotai,mobx,react-query,recoil,redux,valtio,xstate,zustand).
 
 <!-- It is recommended to use [valtio](https://valtio.pmnd.rs/) . -->
 
