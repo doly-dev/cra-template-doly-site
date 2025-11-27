@@ -15,5 +15,5 @@ toc: content
 
 | parameter | illustrate | type | Defaults |
 | --- | --- | --- | --- |
-| component | Synchronous/asynchronous components | `(() => Promise<{ default: Component<any> }>) \| ReactElement` | - |
+| component | Synchronous/asynchronous components | `ReturnType<typeof lazy> \| ReactElement` | - |
 | title | page title | `string` | - |

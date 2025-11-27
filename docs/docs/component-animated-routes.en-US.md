@@ -18,24 +18,13 @@ toc: content
 
 ## API
 
-| parameter | illustrate                         | type            | Defaults |
-| --------- | ---------------------------------- | --------------- | -------- |
-| routes    | routing configuration              | `RouteObject[]` | -        |
-| animated  | Turn off page transition animation | `boolean`       | `true`   |
+| parameter | illustrate            | type            | Defaults |
+| --------- | --------------------- | --------------- | -------- |
+| routes    | routing configuration | `RouteObject[]` | -        |
 
 ### RouteObject
 
-```typescript
-// import { RouteObject } from 'react-router-dom';
-
-export interface RouteObject {
-  caseSensitive?: boolean;
-  children?: RouteObject[];
-  element?: React.ReactNode;
-  index?: boolean;
-  path?: string;
-}
-```
+reference: [RouteObject](https://reactrouter.com/api/components/Route)
 
 ## common problem
 
